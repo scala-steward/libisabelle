@@ -1,0 +1,337 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>api - info.hupel.isabelle.api</title>
+          <meta name="description" content="api - info.hupel.isabelle.api" />
+          <meta name="keywords" content="api info.hupel.isabelle.api" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'info.hupel.isabelle.api.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="info">info</a>.<a href="../../package.html" class="extype" name="info.hupel">hupel</a>.<a href="../package.html" class="extype" name="info.hupel.isabelle">isabelle</a></p>
+        <h1>api</h1><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">api</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Minimal API for managing some Isabelle version. It is centered around the
+notion of an <a href="Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a>, which captures the base
+functionality of an Isabelle process, e.g. starting and stopping an
+instance. API clients should go through the higher-level
+<a href="../setup/Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> and
+<a href="../System.html" class="extype" name="info.hupel.isabelle.System">system</a> interfaces.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="info.hupel.isabelle.api"><span>api</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="info.hupel.isabelle.api.Configuration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ConfigurationextendsProductwithSerializable"></a>
+      <a id="Configuration:Configuration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Configuration.html"><span class="name">Configuration</span></a><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@ConfigurationextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the location and name of a <i>session</i> (Isabelle terminology).</p><div class="fullcomment"><div class="comment cmt"><p>Represents the location and name of a <i>session</i> (Isabelle terminology).</p><p>Refer to the Isabelle system manual for details about sessions.
+<code>libisabelle</code> assumes that users are familiar with the session handling
+of Isabelle.</p><p>Creation of configurations is completely unchecked. Errors such as
+non-existing paths will only manifest themselves when attempting to
+<a href="../System$.html#build(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):Boolean" class="extmbr" name="info.hupel.isabelle.System#build">build</a> a configuration or
+<a href="../System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> a
+<a href="../System.html" class="extype" name="info.hupel.isabelle.System">system</a>. Nonetheless, users should go
+through one of the constructors in the
+<a href="Configuration$.html" class="extype" name="info.hupel.isabelle.api.Configuration">companion object</a>.
+</p></div></div>
+    </li><li name="info.hupel.isabelle.api.Environment" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="EnvironmentextendsAnyRef"></a>
+      <a id="Environment:Environment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Environment.html"><span class="name">Environment</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@EnvironmentextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Abstract interface for an Isabelle environment of a particular
+<a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">version</a> in a path with an underlying PIDE machinery.</p><div class="fullcomment"><div class="comment cmt"><p>Abstract interface for an Isabelle environment of a particular
+<a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">version</a> in a path with an underlying PIDE machinery.</p><p>As opposed to a mere logic-less <code><a href="../setup/Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a></code>,
+an environment knows how to manage Isabelle processes. It can also manage
+multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
+<code>libisabelle</code>.</p><p>It is highly recommended to use
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
+only use the bundled implementations for the supported Isabelle versions.
+By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also
+<code><a href="../setup/Setup$.html#defaultPackageName:String" class="extmbr" name="info.hupel.isabelle.setup.Setup#defaultPackageName">Setup.defaultPackageName</a></code>.</p><p><i>Contract</i></p><ul><li>An implementation is a subclass of this class.</li><li>The class name of the implementation must be <code>Environment</code>. There must
+    be a <code>BuildInfo</code> class in the same package.</li><li>Implementations must be final and provide a constructor with exactly one
+    argument (of type <code><a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Environment.Context</a></code>). There must be no other
+    constructors. The constructor should be <code>private</code>.</li><li>Implementations must be annotated with
+    <code><a href="Implementation.html" class="extype" name="info.hupel.isabelle.api.Implementation">Implementation</a></code>, where the
+    given <a href="Implementation.html#identifier():String" class="extmbr" name="info.hupel.isabelle.api.Implementation#identifier">identifier</a>
+    corresponds to the <a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">version identifier</a>.</li></ul><p><i>Footnote</i></p><p>Due to name clashes in the underlying PIDE machinery (which is provided by
+Isabelle itself and is not under control of <code>libisabelle</code>), it is impossible
+to have multiple environments for different versions in the same class
+loader. This is the primary reason why this class exists in the first place,
+to enable seamless abstraction over multiple PIDEs.
+</p></div></div>
+    </li><li name="info.hupel.isabelle.api.Implementation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ImplementationextendsAnnotationwithAnnotationwithClassfileAnnotation"></a>
+      <a id="Implementation:Implementation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Implementation.html"><span class="name">Implementation</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.annotation.Annotation" class="extype" target="_top">Annotation</a> with <span class="extype" name="java.lang.annotation.Annotation">Annotation</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.annotation.ClassfileAnnotation" class="extype" target="_top">ClassfileAnnotation</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@ImplementationextendsAnnotationwithAnnotationwithClassfileAnnotation" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.Markup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Markup=(String,info.hupel.isabelle.api.package.Properties)"></a>
+      <a id="Markup:Markup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Markup</span><span class="result"> = (<span class="extype" name="scala.Predef.String">String</span>, <a href="#Properties=List[(String,String)]" class="extmbr" name="info.hupel.isabelle.api.Properties">Properties</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Markup=(String,info.hupel.isabelle.api.package.Properties)" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.Properties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Properties=List[(String,String)]"></a>
+      <a id="Properties:Properties"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Properties</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Properties=List[(String,String)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.Version" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="VersionextendsProductwithSerializable"></a>
+      <a id="Version:Version"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Version.html"><span class="name">Version</span></a><span class="params">(<span name="identifier">identifier: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@VersionextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the version of an Isabelle release.</p><div class="fullcomment"><div class="comment cmt"><p>Represents the version of an Isabelle release.</p><p>Repository snapshots are not supported.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="info.hupel.isabelle.api.BuildInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuildInfo"></a>
+      <a id="BuildInfo:BuildInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BuildInfo$.html"><span class="name">BuildInfo</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@BuildInfo" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This object was generated by sbt-buildinfo.</p>
+    </li><li name="info.hupel.isabelle.api.Configuration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Configuration"></a>
+      <a id="Configuration:Configuration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Configuration$.html"><span class="name">Configuration</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Configuration" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience constructors for <a href="Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configurations</a>.</p>
+    </li><li name="info.hupel.isabelle.api.Environment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Environment"></a>
+      <a id="Environment:Environment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Environment$.html"><span class="name">Environment</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Environment" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.XML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XML"></a>
+      <a id="XML:XML"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="XML$.html"><span class="name">XML</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@XML" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
