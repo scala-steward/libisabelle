@@ -12,7 +12,7 @@ import info.hupel.isabelle._, info.hupel.isabelle.api._, info.hupel.isabelle.set
 // import info.hupel.isabelle.setup._
 
 val setup = Setup.defaultSetup(Version("2016")).toOption.get
-// setup: info.hupel.isabelle.setup.Setup = Setup(/home/lars/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>,info.hupel.isabelle.impl)
+// setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>,info.hupel.isabelle.impl)
 
 val transaction =
   for {
