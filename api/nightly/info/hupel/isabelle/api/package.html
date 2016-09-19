@@ -142,7 +142,7 @@ through one of the constructors in the
 an environment knows how to manage Isabelle processes. It can also manage
 multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
 <code>libisabelle</code>.</p><p>It is highly recommended to use
-<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:Option[java.nio.file.Path])(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also
