@@ -51,7 +51,12 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A file system location containing Isabelle sources.</p><p>In almost all cases, instances of this object should be produced using
+<code><a href="Resources$.html#dumpIsabelleResources(path:java.nio.file.Path,classLoader:ClassLoader):cats.data.Xor[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]" class="extmbr" name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources">Resources.dumpIsabelleResources</a></code>
+(see its documentation for details).</p><p>In case you manage Isabelle source files yourself, this class is unneeded
+and you may want to construct
+<a href="../api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configurations</a> yourself.
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
@@ -247,7 +252,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="info.hupel.isabelle.setup.Resources#findTheory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="info.hupel.isabelle.setup.Resources#findTheory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="findTheory(theory:java.nio.file.Path):Option[String]"></a>
       <a id="findTheory(Path):Option[String]"></a>
       <h4 class="signature">
@@ -263,7 +268,11 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Checks presence of a theory file in this location.</p><div class="fullcomment"><div class="comment cmt"><p>Checks presence of a theory file in this location. The input path should
+be a relative file name (e.g. <code>src/HOL/ex/Seq.thy</code>). If present, the
+output is an Isabelle-conforming theory import path
+(e.g. <code>src/HOL/ex/Seq</code>).
+</p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -314,7 +323,8 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Produces a <a href="../api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configuration</a> with
+the specified paths, preceded by the location from this object.</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

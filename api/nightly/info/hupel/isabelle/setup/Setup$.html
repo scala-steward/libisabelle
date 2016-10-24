@@ -163,7 +163,8 @@ be downloaded from the Internet and extracted into the path.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Common trait for a reason why a <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> could not be
+<a href="#detect(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detected</a>.</p>
     </li><li name="info.hupel.isabelle.setup.Setup.SetupImpossible" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SetupImpossibleextendsAnyRef"></a>
       <a id="SetupImpossible:SetupImpossible"></a>
@@ -180,7 +181,8 @@ be downloaded from the Internet and extracted into the path.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Common trait for a reason why a <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> could not be
+<a href="#install(platform:info.hupel.isabelle.setup.OfficialPlatform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">installed</a>.</p>
     </li></ol>
             </div>
 
@@ -313,6 +315,25 @@ be downloaded from the Internet and extracted into the path.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="info.hupel.isabelle.setup.Setup#default" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="default(version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]"></a>
+      <a id="default(Version):Xor[SetupImpossible,Setup]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">default</span><span class="params">(<span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="http://typelevel.org/cats/api/index.html#cats.data.Xor" class="extype" target="_top">Xor</a>[<a href="Setup$$SetupImpossible.html" class="extype" name="info.hupel.isabelle.setup.Setup.SetupImpossible">SetupImpossible</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@default(version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default setup: <a href="Platform$.html#guess:Option[info.hupel.isabelle.setup.OfficialPlatform]" class="extmbr" name="info.hupel.isabelle.setup.Platform#guess">default platform</a>,
+<a href="#detect(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detect existing setup</a>,
+<a href="#install(platform:info.hupel.isabelle.setup.OfficialPlatform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">install if not existing</a>.</p>
     </li><li name="info.hupel.isabelle.setup.Setup#defaultPackageName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="defaultPackageName:String"></a>
       <a id="defaultPackageName:String"></a>
@@ -331,55 +352,19 @@ be downloaded from the Internet and extracted into the path.
     </span>
       <p class="shortcomment cmt">Default package name of PIDE jars.</p><div class="fullcomment"><div class="comment cmt"><p>Default package name of PIDE jars.
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="../api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">info.hupel.isabelle.api.Environment</a></p></span></dd></dl></div>
-    </li><li name="info.hupel.isabelle.setup.Setup#defaultPlatform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="defaultPlatform:Option[info.hupel.isabelle.setup.OfficialPlatform]"></a>
-      <a id="defaultPlatform:Option[OfficialPlatform]"></a>
+    </li><li name="info.hupel.isabelle.setup.Setup#detect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="detect(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]"></a>
+      <a id="detect(Platform,Version):Xor[NoSetup,Setup]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">defaultPlatform</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="OfficialPlatform.html" class="extype" name="info.hupel.isabelle.setup.OfficialPlatform">OfficialPlatform</a>]</span>
+        <span class="name">detect</span><span class="params">(<span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="http://typelevel.org/cats/api/index.html#cats.data.Xor" class="extype" target="_top">Xor</a>[<a href="Setup$$NoSetup.html" class="extype" name="info.hupel.isabelle.setup.Setup.NoSetup">NoSetup</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@defaultPlatform:Option[info.hupel.isabelle.setup.OfficialPlatform]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Default platform: <a href="Platform$.html#guess:Option[info.hupel.isabelle.setup.OfficialPlatform]" class="extmbr" name="info.hupel.isabelle.setup.Platform#guess">guessing</a>.</p>
-    </li><li name="info.hupel.isabelle.setup.Setup#defaultSetup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="defaultSetup(version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]"></a>
-      <a id="defaultSetup(Version):Xor[SetupImpossible,Setup]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">defaultSetup</span><span class="params">(<span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="http://typelevel.org/cats/api/index.html#cats.data.Xor" class="extype" target="_top">Xor</a>[<a href="Setup$$SetupImpossible.html" class="extype" name="info.hupel.isabelle.setup.Setup.SetupImpossible">SetupImpossible</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@defaultSetup(version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">The default setup: <a href="#defaultPlatform:Option[info.hupel.isabelle.setup.OfficialPlatform]" class="extmbr" name="info.hupel.isabelle.setup.Setup#defaultPlatform">default platform</a>,
-<a href="#detectSetup(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detectSetup">detect existing setup</a>,
-<a href="#install(platform:info.hupel.isabelle.setup.OfficialPlatform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">install if not existing</a>.</p>
-    </li><li name="info.hupel.isabelle.setup.Setup#detectSetup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="detectSetup(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]"></a>
-      <a id="detectSetup(Platform,Version):Xor[NoSetup,Setup]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">detectSetup</span><span class="params">(<span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="http://typelevel.org/cats/api/index.html#cats.data.Xor" class="extype" target="_top">Xor</a>[<a href="Setup$$NoSetup.html" class="extype" name="info.hupel.isabelle.setup.Setup.NoSetup">NoSetup</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@detectSetup(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@detect(platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):cats.data.Xor[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

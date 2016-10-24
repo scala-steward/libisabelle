@@ -54,8 +54,8 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A type class representing the ability to convert a type to and from an XML
 representation.</p><p>For combinators to create codecs, refer to the <a href="Codec$.html" class="extype" name="info.hupel.isabelle.Codec">companion object</a>.</p><p><i>Contract</i></p><p>Instances of this class must satisfy the following contract:
 <a href="#decode(tree:info.hupel.isabelle.api.XML.Tree):info.hupel.isabelle.XMLResult[T]" class="extmbr" name="info.hupel.isabelle.Codec#decode">Decoding</a> any value produced via <code><a href="#encode(t:T):info.hupel.isabelle.api.XML.Tree" class="extmbr" name="info.hupel.isabelle.Codec#encode">encode</a></code> must succeed,
-yielding the original value. This only has to hold for one environment,
-but not necessarily across environments.</p><p>For the opposite direction, it is generally expected that a value which
+yielding the original value. The <code><a href="#mlType:String" class="extmbr" name="info.hupel.isabelle.Codec#mlType">mlType</a></code> field must contain a string
+representation of the corresponding type in Isabelle/ML.</p><p>For the opposite direction, it is generally expected that a value which
 cannot be produced via <code><a href="#encode(t:T):info.hupel.isabelle.api.XML.Tree" class="extmbr" name="info.hupel.isabelle.Codec#encode">encode</a></code> should not <a href="#decode(tree:info.hupel.isabelle.api.XML.Tree):info.hupel.isabelle.XMLResult[T]" class="extmbr" name="info.hupel.isabelle.Codec#decode">decode</a> cleanly. This is
 generally achieved by adding <i>tags</i> to the trees. For example, if the
 codec for type <code>Foo</code> for a given value would produce an XML document <code>t</code>
@@ -169,7 +169,7 @@ error.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">String representation of the type corresponding to <code>T</code> in Isabelle/ML.</p>
     </li></ol>
             </div>
 

@@ -108,8 +108,8 @@
 representation.</p><div class="fullcomment"><div class="comment cmt"><p>A type class representing the ability to convert a type to and from an XML
 representation.</p><p>For combinators to create codecs, refer to the <a href="Codec$.html" class="extype" name="info.hupel.isabelle.Codec">companion object</a>.</p><p><i>Contract</i></p><p>Instances of this class must satisfy the following contract:
 <a href="Codec.html#decode(tree:info.hupel.isabelle.api.XML.Tree):info.hupel.isabelle.XMLResult[T]" class="extmbr" name="info.hupel.isabelle.Codec#decode">Decoding</a> any value produced via <code><a href="Codec.html#encode(t:T):info.hupel.isabelle.api.XML.Tree" class="extmbr" name="info.hupel.isabelle.Codec#encode">encode</a></code> must succeed,
-yielding the original value. This only has to hold for one environment,
-but not necessarily across environments.</p><p>For the opposite direction, it is generally expected that a value which
+yielding the original value. The <code><a href="Codec.html#mlType:String" class="extmbr" name="info.hupel.isabelle.Codec#mlType">mlType</a></code> field must contain a string
+representation of the corresponding type in Isabelle/ML.</p><p>For the opposite direction, it is generally expected that a value which
 cannot be produced via <code><a href="Codec.html#encode(t:T):info.hupel.isabelle.api.XML.Tree" class="extmbr" name="info.hupel.isabelle.Codec#encode">encode</a></code> should not <a href="Codec.html#decode(tree:info.hupel.isabelle.api.XML.Tree):info.hupel.isabelle.XMLResult[T]" class="extmbr" name="info.hupel.isabelle.Codec#decode">decode</a> cleanly. This is
 generally achieved by adding <i>tags</i> to the trees. For example, if the
 codec for type <code>Foo</code> for a given value would produce an XML document <code>t</code>
@@ -672,9 +672,11 @@ instance. API clients should go through the higher-level
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Tools for setting up an Isabelle installation.</p><div class="fullcomment"><div class="comment cmt"><p>Tools for setting up an Isabelle installation. Most functions in this
-package have some effect on the local file system and may download content
-from the Internet.
+      <p class="shortcomment cmt">Tools for setting up an <a href="setup/Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Isabelle installation</a> and managing
+<a href="setup/Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Isabelle sources</a> and <a href="setup/Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">environments</a> at runtime.</p><div class="fullcomment"><div class="comment cmt"><p>Tools for setting up an <a href="setup/Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Isabelle installation</a> and managing
+<a href="setup/Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Isabelle sources</a> and <a href="setup/Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">environments</a> at runtime.
+Most functions in this package have some effect on the local file system and
+may download content from the Internet.
 </p></div></div>
     </li></ol>
             </div>

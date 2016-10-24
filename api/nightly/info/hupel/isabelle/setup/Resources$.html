@@ -51,7 +51,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utilities to extract <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">resources</a> from the classpath.</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
@@ -241,7 +241,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dumpIsabelleResources(path:java.nio.file.Path,classLoader:ClassLoader):cats.data.Xor[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]"></a>
       <a id="dumpIsabelleResources(Path,ClassLoader):Xor[Error,Resources]"></a>
       <h4 class="signature">
@@ -257,7 +257,23 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Searches the specified class loader for Isabelle source files.</p><div class="fullcomment"><div class="comment cmt"><p>Searches the specified class loader for Isabelle source files.</p><p>Isabelle sources files can be automatically managed by <code>libisabelle</code>. When
+using an SBT-based build, the
+<code><a href="https://github.com/larsrh/sbt-libisabelle" target="_blank">sbt-libisabelle</a></code> plugin
+automatically configures the build to copy the Isabelle sources stored in
+<code>src/main/isabelle</code> into an appropriate location such that they become
+part of the runtime classpath.</p><p>This function expects any number of index files in the location
+<code>.libisabelle/.files</code>, containing a list of relative path names where
+Isabelle source files may be found. For example, an entry <code>A/tactic.ML</code>
+will lead to a lookup for a resource at <code>.libisabelle/A/tactic.ML</code>. All
+index files will be processed. The referenced files will be copied to
+the specified location. Path names are expected to be encoded in UTF-8,
+which is the standard encoding Isabelle uses.</p><p>After that, a <code>ROOTS</code> file will be created, listing all direct
+subdirectories that have been created below the specified path and that
+are also session root directories. For example, if the files
+<code>A/tactic.ML</code>, <code>A/ROOTS</code>, <code>B/ROOT</code> and <code>C/Seq.thy</code> have been written, the
+<code>ROOTS</code> file will contain <code>A</code> and <code>B</code>, but not <code>C</code>.
+</p></div></div>
     </li><li name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dumpIsabelleResources():cats.data.Xor[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]"></a>
       <a id="dumpIsabelleResources():Xor[Error,Resources]"></a>
@@ -274,7 +290,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Shorthand for <code><a href="#dumpIsabelleResources(path:java.nio.file.Path,classLoader:ClassLoader):cats.data.Xor[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]" class="extmbr" name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources">dumpIsabelleResources</a>
+using a temporary path and the current class loader.
+</code></p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>

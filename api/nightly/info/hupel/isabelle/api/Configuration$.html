@@ -290,9 +290,10 @@ is, the specified session is declared in a <code>ROOT</code> file in that path
 (or indirectly via a <code>ROOTS</code> file).</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configuration</a> from an additional path, that
 is, the specified session is declared in a <code>ROOT</code> file in that path
 (or indirectly via a <code>ROOTS</code> file).</p><p>In almost all cases, it should refer to a session which has one of the
-<code>Protocol</code> session of the
-<a href="https://github.com/larsrh/libisabelle-protocol" target="_blank">accompanying theory sources</a>
-as an ancestor, or includes these theories in some other way.</p><p>The given path must not be identical to or be a subdirectory of the
+<code>Protocol</code> session of the accompanying Isabelle sources
+as an ancestor, or includes these theories in some other way. To manage
+these sources automatically, you may use the
+<code><a href="../setup/Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Resources</a></code> class.</p><p>The given path must not be identical to or be a subdirectory of the
 Isabelle home path. It must also, either directly or indirectly via a
 <code>ROOTS</code> file, contain declarations for all ancestor sessions.
 </p></div></div>

@@ -47,9 +47,10 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Tools for setting up an Isabelle installation. Most functions in this
-package have some effect on the local file system and may download content
-from the Internet.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Tools for setting up an <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Isabelle installation</a> and managing
+<a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Isabelle sources</a> and <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">environments</a> at runtime.
+Most functions in this package have some effect on the local file system and
+may download content from the Internet.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
@@ -151,7 +152,7 @@ appropriate methods in <a href="Setup$.html" class="extype" name="info.hupel.isa
 <a href="../api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Function preparing a classpath containing an appropriate
 <a href="../api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a>.</p><p>Instances are available in the <a href="Resolver$.html" class="extype" name="info.hupel.isabelle.setup.Resolver">companion object</a>.
 </p></div></div>
-    </li><li name="info.hupel.isabelle.setup.Resources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="info.hupel.isabelle.setup.Resources" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ResourcesextendsProductwithSerializable"></a>
       <a id="Resources:Resources"></a>
       <h4 class="signature">
@@ -167,7 +168,12 @@ appropriate methods in <a href="Setup$.html" class="extype" name="info.hupel.isa
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">A file system location containing Isabelle sources.</p><div class="fullcomment"><div class="comment cmt"><p>A file system location containing Isabelle sources.</p><p>In almost all cases, instances of this object should be produced using
+<code><a href="Resources$.html#dumpIsabelleResources(path:java.nio.file.Path,classLoader:ClassLoader):cats.data.Xor[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]" class="extmbr" name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources">Resources.dumpIsabelleResources</a></code>
+(see its documentation for details).</p><p>In case you manage Isabelle source files yourself, this class is unneeded
+and you may want to construct
+<a href="../api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configurations</a> yourself.
+</p></div></div>
     </li><li name="info.hupel.isabelle.setup.Setup" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="SetupextendsProductwithSerializable"></a>
       <a id="Setup:Setup"></a>
@@ -265,7 +271,7 @@ No guarantees are made when constructing instances manually.</p><p><i>Footnote</
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Utilities to extract <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">resources</a> from the classpath.</p>
     </li><li name="info.hupel.isabelle.setup.Setup" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Setup"></a>
       <a id="Setup:Setup"></a>
@@ -287,7 +293,7 @@ setups reside. Given a <a href="../api/Version.html" class="extype" name="info.h
 base path can either be searched for an existing setup, or an archive can
 be downloaded from the Internet and extracted into the path.
 </p></div></div>
-    </li><li name="info.hupel.isabelle.setup.Tar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="info.hupel.isabelle.setup.Tar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Tar"></a>
       <a id="Tar:Tar"></a>
       <h4 class="signature">
@@ -303,7 +309,7 @@ be downloaded from the Internet and extracted into the path.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Downloading and unpacking <code>tar</code> archives.</p>
+      <p class="shortcomment cmt">Downloading and unpacking <code>tar</code> archives.</p><div class="fullcomment"><div class="comment cmt"><p>Downloading and unpacking <code>tar</code> archives. All operations are blocking.</p></div></div>
     </li></ol>
             </div>
 
