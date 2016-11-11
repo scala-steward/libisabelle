@@ -47,7 +47,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Setup</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Setup</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -95,7 +95,7 @@ No guarantees are made when constructing instances manually.</p><p><i>Footnote</
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="info.hupel.isabelle.setup.Setup#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(home:java.nio.file.Path,platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version,packageName:String):info.hupel.isabelle.setup.Setup"></a>
+      <a id="&lt;init&gt;(home:java.nio.file.Path,platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):info.hupel.isabelle.setup.Setup"></a>
       <a id="&lt;init&gt;:Setup"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -103,10 +103,10 @@ No guarantees are made when constructing instances manually.</p><p><i>Footnote</
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Setup</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">Setup</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.setup.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup@&lt;init&gt;(home:java.nio.file.Path,platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version,packageName:String):info.hupel.isabelle.setup.Setup" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup@&lt;init&gt;(home:java.nio.file.Path,platform:info.hupel.isabelle.setup.Platform,version:info.hupel.isabelle.api.Version):info.hupel.isabelle.setup.Setup" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -302,6 +302,23 @@ No guarantees are made when constructing instances manually.</p><p><i>Footnote</
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="info.hupel.isabelle.setup.Setup#makeClassLoader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="makeClassLoader(resolver:info.hupel.isabelle.setup.Resolver)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[ClassLoader]"></a>
+      <a id="makeClassLoader(Resolver)(ExecutionContext):Future[ClassLoader]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">makeClassLoader</span><span class="params">(<span name="resolver">resolver: <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">Resolver</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.lang.ClassLoader">ClassLoader</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup@makeClassLoader(resolver:info.hupel.isabelle.setup.Resolver)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[ClassLoader]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="info.hupel.isabelle.setup.Setup#makeEnvironment" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]"></a>
       <a id="makeEnvironment(Resolver,Path)(ExecutionContext):Future[Environment]"></a>
@@ -390,23 +407,6 @@ also checks for matching <a href="../api/BuildInfo$.html" class="extype" name="i
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="info.hupel.isabelle.setup.Setup#packageName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="packageName:String"></a>
-      <a id="packageName:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">packageName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup@packageName:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="info.hupel.isabelle.setup.Setup#platform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="platform:info.hupel.isabelle.setup.Platform"></a>
       <a id="platform:Platform"></a>

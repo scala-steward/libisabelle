@@ -60,7 +60,7 @@ multiple running processes at the same time.</p><p>A subclass of this class is c
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also
-<code><a href="../setup/Setup$.html#defaultPackageName:String" class="extmbr" name="info.hupel.isabelle.setup.Setup#defaultPackageName">Setup.defaultPackageName</a></code>.</p><p><i>Contract</i></p><ul><li>An implementation is a subclass of this class.</li><li>The class name of the implementation must be <code>Environment</code>. There must
+<code><span class="extype" name="info.hupel.isabelle.setup.Setup.defaultPackageName">Setup.defaultPackageName</span></code>.</p><p><i>Contract</i></p><ul><li>An implementation is a subclass of this class.</li><li>The class name of the implementation must be <code>Environment</code>. There must
     be a <code>BuildInfo</code> class in the same package.</li><li>Implementations must be final and provide a constructor with exactly one
     argument (of type <code><a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Environment.Context</a></code>). There must be no other
     constructors. The constructor should be <code>private</code>.</li><li>Implementations must be annotated with
