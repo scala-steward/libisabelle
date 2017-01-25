@@ -1,10 +1,12 @@
 ## Quickstart
 
 ```scala
-import scala.concurrent._, scala.concurrent.duration._, scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent._, scala.concurrent.duration._
 // import scala.concurrent._
 // import scala.concurrent.duration._
-// import scala.concurrent.ExecutionContext.Implicits.global
+
+import monix.execution.Scheduler.Implicits.global
+// import monix.execution.Scheduler.Implicits.global
 
 import info.hupel.isabelle._, info.hupel.isabelle.api._, info.hupel.isabelle.setup._
 // import info.hupel.isabelle._

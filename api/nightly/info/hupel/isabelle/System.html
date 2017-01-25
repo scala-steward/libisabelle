@@ -212,11 +212,11 @@ failed.</p><p>It is recommended to wait for all pending futures to complete, or 
 <span class="extype" name="scala.concurrent.Future">future</span> succeeds, the prover has been shut
 down.</p><p>Calling anything after dispose is undefined. The object should not be used
 afterwards.</p><p>Depending on the
-<a href="api/Environment.html#executionContext:scala.concurrent.ExecutionContext" class="extmbr" name="info.hupel.isabelle.api.Environment#executionContext">implementation details</a>
+<span class="extype" name="info.hupel.isabelle.api.Environment#executionContext">implementation details</span>
 of the <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a> used to
-<a href="System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> this system, it may be unneccessary to call this
+<a href="System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> this system, it may be unneccessary to call this
 method. In any case, it is good practice to call it.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="#executionContext:scala.concurrent.ExecutionContext" class="extmbr" name="info.hupel.isabelle.System#executionContext">executionContext</a></p></span></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><span class="extype" name="executionContext">executionContext</span></p></span></dd></dl></div>
     </li><li name="info.hupel.isabelle.System#env" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="env:info.hupel.isabelle.api.Environment"></a>
       <a id="env:Environment"></a>
@@ -268,31 +268,6 @@ method. In any case, it is good practice to call it.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="info.hupel.isabelle.System#executionContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="executionContext:scala.concurrent.ExecutionContext"></a>
-      <a id="executionContext:ExecutionContext"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">executionContext</span><span class="result">: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#info.hupel.isabelle.System@executionContext:scala.concurrent.ExecutionContext" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">The <span class="extype" name="scala.concurrent.ExecutionContext">execution context</span> used
-internally for bi-directional communication with the prover.</p><div class="fullcomment"><div class="comment cmt"><p>The <span class="extype" name="scala.concurrent.ExecutionContext">execution context</span> used
-internally for bi-directional communication with the prover.</p><p>Guaranteed to be the same execution context as the
-<a href="api/Environment.html#executionContext:scala.concurrent.ExecutionContext" class="extmbr" name="info.hupel.isabelle.api.Environment#executionContext">execution context</a>
-of the <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a> used to
-<a href="System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> this system.</p><p>It is fine to use this execution context for other purposes, for example
-to transform the <span class="extype" name="scala.concurrent.Future">futures</span> produced by
-<a href="#invoke[I,O](operation:info.hupel.isabelle.Operation[I,O])(arg:I):monix.execution.CancelableFuture[info.hupel.isabelle.ProverResult[O]]" class="extmbr" name="info.hupel.isabelle.System#invoke">invoking operations</a>.</p><p>Since it is marked as <code>implicit</code>, it can be readily imported and used.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="#dispose:scala.concurrent.Future[Unit]" class="extmbr" name="info.hupel.isabelle.System#dispose">dispose</a></p></span></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -469,6 +444,31 @@ argument or a failing proof).
       </a>
     </span>
       
+    </li><li name="info.hupel.isabelle.System#scheduler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduler:monix.execution.Scheduler"></a>
+      <a id="scheduler:Scheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduler</span><span class="result">: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.System@scheduler:monix.execution.Scheduler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The <span class="extype" name="scala.concurrent.ExecutionContext">execution context</span> used
+internally for bi-directional communication with the prover.</p><div class="fullcomment"><div class="comment cmt"><p>The <span class="extype" name="scala.concurrent.ExecutionContext">execution context</span> used
+internally for bi-directional communication with the prover.</p><p>Guaranteed to be the same execution context as the
+<span class="extype" name="info.hupel.isabelle.api.Environment#executionContext">execution context</span>
+of the <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a> used to
+<a href="System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> this system.</p><p>It is fine to use this execution context for other purposes, for example
+to transform the <span class="extype" name="scala.concurrent.Future">futures</span> produced by
+<a href="#invoke[I,O](operation:info.hupel.isabelle.Operation[I,O])(arg:I):monix.execution.CancelableFuture[info.hupel.isabelle.ProverResult[O]]" class="extmbr" name="info.hupel.isabelle.System#invoke">invoking operations</a>.</p><p>Since it is marked as <code>implicit</code>, it can be readily imported and used.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="#dispose:scala.concurrent.Future[Unit]" class="extmbr" name="info.hupel.isabelle.System#dispose">dispose</a></p></span></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

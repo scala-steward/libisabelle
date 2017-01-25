@@ -56,7 +56,7 @@
 an environment knows how to manage Isabelle processes. It can also manage
 multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
 <code>libisabelle</code>.</p><p>It is highly recommended to use
-<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also
@@ -573,23 +573,6 @@ to enable seamless abstraction over multiple PIDEs.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="info.hupel.isabelle.api.Environment#executionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="executionContext:scala.concurrent.ExecutionContext"></a>
-      <a id="executionContext:ExecutionContext"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit final </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">executionContext</span><span class="result">: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment@executionContext:scala.concurrent.ExecutionContext" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -749,6 +732,23 @@ to enable seamless abstraction over multiple PIDEs.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="info.hupel.isabelle.api.Environment#scheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="scheduler:monix.execution.Scheduler"></a>
+      <a id="scheduler:Scheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduler</span><span class="result">: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Environment@scheduler:monix.execution.Scheduler" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

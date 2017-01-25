@@ -115,7 +115,7 @@ instance. API clients should go through the higher-level
 of Isabelle.</p><p>Creation of configurations is completely unchecked. Errors such as
 non-existing paths will only manifest themselves when attempting to
 <a href="../System$.html#build(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):Boolean" class="extmbr" name="info.hupel.isabelle.System#build">build</a> a configuration or
-<a href="../System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> a
+<a href="../System$.html#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a> a
 <a href="../System.html" class="extype" name="info.hupel.isabelle.System">system</a>. Nonetheless, users should go
 through an existing <a href="../setup/Resources$.html" class="extype" name="info.hupel.isabelle.setup.Resources">resources</a>
 object.
@@ -142,7 +142,7 @@ object.
 an environment knows how to manage Isabelle processes. It can also manage
 multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
 <code>libisabelle</code>.</p><p>It is highly recommended to use
-<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also

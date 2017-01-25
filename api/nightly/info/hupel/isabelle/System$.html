@@ -93,18 +93,18 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="info.hupel.isabelle.System.StartupException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="StartupExceptionextendsRuntimeException"></a>
+      <a id="StartupExceptionextendsRuntimeExceptionwithProductwithSerializable"></a>
       <a id="StartupException:StartupException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="System$$StartupException.html"><span class="name">StartupException</span></a><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span></span>
+        <a href="System$$StartupException.html"><span class="name">StartupException</span></a><span class="params">(<span name="reason">reason: <a href="System$$StartupException$$Reason.html" class="extype" name="info.hupel.isabelle.System.StartupException.Reason">Reason</a></span>)</span><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#info.hupel.isabelle.System$@StartupExceptionextendsRuntimeException" title="Permalink" target="_top">
+      <a href="../../../index.html#info.hupel.isabelle.System$@StartupExceptionextendsRuntimeExceptionwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -167,6 +167,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="info.hupel.isabelle.System.StartupException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartupException"></a>
+      <a id="StartupException:StartupException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="System$$StartupException$.html"><span class="name">StartupException</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.System$@StartupException" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -205,7 +222,7 @@
 <a href="api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">configuration</a>.</p><p>This operation is idempotent, but not parallel-safe. It must not be running
 simultaneously for the same <a href="setup/Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a>, not
 even on different JVMs or with differnet configurations. Parallel
-invocations of <code><a href="#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a></code> should be avoided, but are safe under the
+invocations of <code><a href="#create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]" class="extmbr" name="info.hupel.isabelle.System#create">create</a></code> should be avoided, but are safe under the
 condition that they are using independent configurations, or that the
 common ancestors of the configurations have already been successfully
 built. Refer to the
@@ -239,18 +256,18 @@ file system.
               
         </dd></dl></div>
     </li><li name="info.hupel.isabelle.System#create" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]"></a>
-      <a id="create(Environment,Configuration):Future[System]"></a>
+      <a id="create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]"></a>
+      <a id="create(Environment,Configuration,FiniteDuration):Future[System]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">create</span><span class="params">(<span name="env">env: <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></span>, <span name="config">config: <a href="api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">Configuration</a></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<a href="System.html" class="extype" name="info.hupel.isabelle.System">System</a>]</span>
+        <span class="name">create</span><span class="params">(<span name="env">env: <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></span>, <span name="config">config: <a href="api/Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">Configuration</a></span>, <span name="pingTimeout">pingTimeout: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span> = <span class="symbol">5.seconds</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<a href="System.html" class="extype" name="info.hupel.isabelle.System">System</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#info.hupel.isabelle.System$@create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration):scala.concurrent.Future[info.hupel.isabelle.System]" title="Permalink" target="_top">
+      <a href="../../../index.html#info.hupel.isabelle.System$@create(env:info.hupel.isabelle.api.Environment,config:info.hupel.isabelle.api.Configuration,pingTimeout:scala.concurrent.duration.FiniteDuration):scala.concurrent.Future[info.hupel.isabelle.System]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
