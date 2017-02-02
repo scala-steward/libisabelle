@@ -103,7 +103,7 @@ instance. API clients should go through the higher-level
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Configuration.html"><span class="name">Configuration</span></a><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Configuration.html"><span class="name">Configuration</span></a><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#info.hupel.isabelle.api.package@ConfigurationextendsProductwithSerializable" title="Permalink" target="_top">
@@ -142,7 +142,7 @@ object.
 an environment knows how to manage Isabelle processes. It can also manage
 multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
 <code>libisabelle</code>.</p><p>It is highly recommended to use
-<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path)(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path,components:List[java.nio.file.Path])(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also

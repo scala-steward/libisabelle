@@ -16,11 +16,15 @@ import info.hupel.isabelle._, info.hupel.isabelle.api._, info.hupel.isabelle.set
 val setup = Setup.default(Version("2016")).right.get
 // setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>)
 
+val resources = Resources.dumpIsabelleResources().right.get
+// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources282159016512206940)
+
+val config = resources.makeConfiguration(Nil, Nil, "Protocol")
+// config: info.hupel.isabelle.api.Configuration = session Protocol
+
 val transaction =
   for {
-    env <- setup.makeEnvironment
-    resources = Resources.dumpIsabelleResources().right.get
-    config = resources.makeConfiguration(Nil, "Protocol")
+    env <- setup.makeEnvironment(config)
     sys <- System.create(env, config)
     response <- sys.invoke(Operation.Hello)("world")
     () <- sys.dispose

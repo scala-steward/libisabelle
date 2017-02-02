@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Configuration</span><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Configuration</span><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -98,7 +98,7 @@ object.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="info.hupel.isabelle.api.Configuration#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(paths:List[java.nio.file.Path],session:String):info.hupel.isabelle.api.Configuration"></a>
+      <a id="&lt;init&gt;(paths:List[java.nio.file.Path],components:List[java.nio.file.Path],session:String):info.hupel.isabelle.api.Configuration"></a>
       <a id="&lt;init&gt;:Configuration"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -106,10 +106,10 @@ object.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Configuration</span><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">Configuration</span><span class="params">(<span name="paths">paths: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration@&lt;init&gt;(paths:List[java.nio.file.Path],session:String):info.hupel.isabelle.api.Configuration" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration@&lt;init&gt;(paths:List[java.nio.file.Path],components:List[java.nio.file.Path],session:String):info.hupel.isabelle.api.Configuration" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -214,6 +214,23 @@ object.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="info.hupel.isabelle.api.Configuration#components" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="components:List[java.nio.file.Path]"></a>
+      <a id="components:List[Path]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">components</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration@components:List[java.nio.file.Path]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
