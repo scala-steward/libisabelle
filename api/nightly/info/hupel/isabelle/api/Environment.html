@@ -59,8 +59,8 @@ multiple running processes at the same time.</p><p>A subclass of this class is c
 <code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path,components:List[java.nio.file.Path])(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
-By convention, they live in the package <code>info.hupel.isabelle.impl</code>. See also
-<code><span class="extype" name="info.hupel.isabelle.setup.Setup.defaultPackageName">Setup.defaultPackageName</span></code>.</p><p><i>Contract</i></p><ul><li>An implementation is a subclass of this class.</li><li>The class name of the implementation must be <code>Environment</code>. There must
+By convention, they live in the package specified in
+<code><a href="Environment$.html#packageName:String" class="extmbr" name="info.hupel.isabelle.api.Environment#packageName">Environment.packageName</a></code>.</p><p><i>Contract</i></p><ul><li>An implementation is a subclass of this class.</li><li>The class name of the implementation must be <code>Environment</code>. There must
     be a <code>BuildInfo</code> class in the same package.</li><li>Implementations must be final and provide a constructor with exactly one
     argument (of type <code><a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Environment.Context</a></code>). There must be no other
     constructors. The constructor should be <code>private</code>.</li><li>Implementations must be annotated with

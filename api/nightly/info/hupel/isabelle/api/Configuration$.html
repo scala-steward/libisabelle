@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Environment - info.hupel.isabelle.api.Environment</title>
-          <meta name="description" content="Environment - info.hupel.isabelle.api.Environment" />
-          <meta name="keywords" content="Environment info.hupel.isabelle.api.Environment" />
+          <title>Configuration - info.hupel.isabelle.api.Configuration</title>
+          <meta name="description" content="Configuration - info.hupel.isabelle.api.Configuration" />
+          <meta name="keywords" content="Configuration info.hupel.isabelle.api.Configuration" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'info.hupel.isabelle.api.Environment$';
+            var hash = 'info.hupel.isabelle.api.Configuration$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,14 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="Environment.html" title="See companion class"><img alt="Object/Class" src="../../../../lib/object_to_class_big.png" /></a>
+        <a href="Configuration.html" title="See companion class"><img alt="Object/Class" src="../../../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a href="../../../package.html" class="extype" name="info">info</a>.<a href="../../package.html" class="extype" name="info.hupel">hupel</a>.<a href="../package.html" class="extype" name="info.hupel.isabelle">isabelle</a>.<a href="package.html" class="extype" name="info.hupel.isabelle.api">api</a></p>
-        <h1><a href="Environment.html" title="See companion class">Environment</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="Configuration.html" title="See companion class">Configuration</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="Environment.html" title="See companion class">class Environment</a>
+            <a href="Configuration.html" title="See companion class">class Configuration</a>
             | <a href="package.html" class="extype" name="info.hupel.isabelle.api">package api</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Environment</span>
+        <span class="name">Configuration</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="info.hupel.isabelle.api.Environment"><span>Environment</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="info.hupel.isabelle.api.Configuration"><span>Configuration</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,63 +90,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="info.hupel.isabelle.api.Environment.Context" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ContextextendsProductwithSerializable"></a>
-      <a id="Context:Context"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="Environment$$Context.html"><span class="name">Context</span></a><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="user">user: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@ContextextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Bundles all requirements to instantiate an <a href="Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">environment</a>.</p>
-    </li><li name="info.hupel.isabelle.api.Environment.Raw" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="RawextendsAnyRef"></a>
-      <a id="Raw:Raw"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Environment$$Raw.html"><span class="name">Raw</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@RawextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Marker trait indicating raw (encoded) Isabelle symbol text.</p><div class="fullcomment"><div class="comment cmt"><p>Marker trait indicating raw (encoded) Isabelle symbol text.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Environment.html#encode(text:shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Unicode]):shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Raw]" class="extmbr" name="info.hupel.isabelle.api.Environment#encode">Environment#encode</a></p></span><span class="cmt"><p><a href="Environment.html#decode(text:shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Raw]):shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Unicode]" class="extmbr" name="info.hupel.isabelle.api.Environment#decode">Environment#decode</a></p></span></dd></dl></div>
-    </li><li name="info.hupel.isabelle.api.Environment.Unicode" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="UnicodeextendsAnyRef"></a>
-      <a id="Unicode:Unicode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="Environment$$Unicode.html"><span class="name">Unicode</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@UnicodeextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Marker trait indicating Unicode (decoded) Isabelle symbol text.</p><div class="fullcomment"><div class="comment cmt"><p>Marker trait indicating Unicode (decoded) Isabelle symbol text.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Environment.html#encode(text:shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Unicode]):shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Raw]" class="extmbr" name="info.hupel.isabelle.api.Environment#encode">Environment#encode</a></p></span><span class="cmt"><p><a href="Environment.html#decode(text:shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Raw]):shapeless.tag.@@[String,info.hupel.isabelle.api.Environment.Unicode]" class="extmbr" name="info.hupel.isabelle.api.Environment#decode">Environment#decode</a></p></span></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         
 
@@ -164,7 +108,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -181,7 +125,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@##():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@##():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -198,7 +142,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -215,7 +159,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -232,7 +176,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@clone():Object" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -255,7 +199,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -272,7 +216,7 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -289,7 +233,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -312,7 +256,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -329,28 +273,11 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="info.hupel.isabelle.api.Environment#instantiate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instantiate(version:info.hupel.isabelle.api.Version,classpath:List[java.nio.file.Path],context:info.hupel.isabelle.api.Environment.Context):info.hupel.isabelle.api.Environment"></a>
-      <a id="instantiate(Version,List[Path],Context):Environment"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">instantiate</span><span class="params">(<span name="version">version: <a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="classpath">classpath: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="context">context: <a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Context</a></span>)</span><span class="result">: <a href="Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@instantiate(version:info.hupel.isabelle.api.Version,classpath:List[java.nio.file.Path],context:info.hupel.isabelle.api.Environment.Context):info.hupel.isabelle.api.Environment" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -363,7 +290,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -380,7 +307,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -397,7 +324,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -414,24 +341,24 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="info.hupel.isabelle.api.Environment#packageName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="packageName:String"></a>
-      <a id="packageName:String"></a>
+    </li><li name="info.hupel.isabelle.api.Configuration#simple" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="simple(session:String):info.hupel.isabelle.api.Configuration"></a>
+      <a id="simple(String):Configuration"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">packageName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">simple</span><span class="params">(<span name="session">session: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Configuration.html" class="extype" name="info.hupel.isabelle.api.Configuration">Configuration</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@packageName:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@simple(session:String):info.hupel.isabelle.api.Configuration" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -448,7 +375,7 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -465,7 +392,7 @@
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@toString():String" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@toString():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -482,7 +409,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -505,7 +432,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -528,7 +455,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Configuration$@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -548,7 +475,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

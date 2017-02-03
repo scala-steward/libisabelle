@@ -268,11 +268,20 @@ Isabelle source files may be found. For example, an entry <code>A/tactic.ML</cod
 will lead to a lookup for a resource at <code>.libisabelle/A/tactic.ML</code>. All
 index files will be processed. The referenced files will be copied to
 the specified location. Path names are expected to be encoded in UTF-8,
-which is the standard encoding Isabelle uses.</p><p>After that, a <code>ROOTS</code> file will be created, listing all direct
-subdirectories that have been created below the specified path and that
-are also session root directories. For example, if the files
-<code>A/tactic.ML</code>, <code>A/ROOTS</code>, <code>B/ROOT</code> and <code>C/Seq.thy</code> have been written, the
-<code>ROOTS</code> file will contain <code>A</code> and <code>B</code>, but not <code>C</code>.
+which is the standard encoding Isabelle uses.</p><p>The specified path will then be turned into an Isabelle &quot;component&quot; (refer
+to the Isabelle system manual for information about components) by
+creating an <code>etc/settings</code> file, which we will call <i>resources
+component</i>. The root directory of the resources component is available
+in the environment variable <code>LIBISABELLE_RESOURCES_HOME</code>.</p><p>Resources are checked for contained components and session root
+directories. This is done by looking for <code>ROOT</code>, <code>ROOTS</code>, and
+<code>etc/settings</code> in direct subdirectories that have been created below the
+specified path. Components are added as subcomponents to the resources
+component (<code>$LIBISABELLE_RESOURCES_HOME/etc/components</code>) and session root
+directories to <code>$LIBISABELLE_RESOURCES_HOME/ROOTS</code>. Session roots that are
+also components are only added as components, because components are
+automatically discovered as session roots.</p><p>Note that this will only work correctly if the specified path ultimately
+gets registered as an Isabelle component. Otherwise, subcomponents that
+are also session roots do not get discovered properly.
 </p></div></div>
     </li><li name="info.hupel.isabelle.setup.Resources#dumpIsabelleResources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dumpIsabelleResources():Either[info.hupel.isabelle.setup.Resources.Error,info.hupel.isabelle.setup.Resources]"></a>
