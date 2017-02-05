@@ -1,5 +1,8 @@
 ## Quickstart
 
+
+
+
 ```scala
 import scala.concurrent._, scala.concurrent.duration._
 // import scala.concurrent._
@@ -17,7 +20,7 @@ val setup = Setup.default(Version("2016")).right.get
 // setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>)
 
 val resources = Resources.dumpIsabelleResources().right.get
-// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources6630680183794885269,List(/tmp/libisabelle_resources6630680183794885269/libisabelle, /tmp/libisabelle_resources6630680183794885269/classy, /tmp/libisabelle_resources6630680183794885269/multi-isabelle))
+// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources2802827727937749951,List(/tmp/libisabelle_resources2802827727937749951/libisabelle, /tmp/libisabelle_resources2802827727937749951/classy, /tmp/libisabelle_resources2802827727937749951/multi-isabelle))
 
 val config = Configuration.simple("Protocol")
 // config: info.hupel.isabelle.api.Configuration = session Protocol
