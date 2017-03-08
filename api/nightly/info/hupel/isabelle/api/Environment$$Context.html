@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Context</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="user">user: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <span class="name">Context</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="user">user: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="info.hupel.isabelle.api.Environment.Context#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(home:java.nio.file.Path,user:java.nio.file.Path,components:List[java.nio.file.Path])(implicitscheduler:monix.execution.Scheduler):info.hupel.isabelle.api.Environment.Context"></a>
+      <a id="&lt;init&gt;(home:java.nio.file.Path,user:java.nio.file.Path,components:List[java.nio.file.Path],platform:info.hupel.isabelle.api.Platform)(implicitscheduler:monix.execution.Scheduler):info.hupel.isabelle.api.Environment.Context"></a>
       <a id="&lt;init&gt;:Context"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +97,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Context</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="user">user: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>)</span>
+        <span class="name">Context</span><span class="params">(<span name="home">home: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="user">user: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="components">components: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.nio.file.Path">Path</span>]</span>, <span name="platform">platform: <a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <span class="extype" name="monix.execution.Scheduler">Scheduler</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$$Context@&lt;init&gt;(home:java.nio.file.Path,user:java.nio.file.Path,components:List[java.nio.file.Path])(implicitscheduler:monix.execution.Scheduler):info.hupel.isabelle.api.Environment.Context" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$$Context@&lt;init&gt;(home:java.nio.file.Path,user:java.nio.file.Path,components:List[java.nio.file.Path],platform:info.hupel.isabelle.api.Platform)(implicitscheduler:monix.execution.Scheduler):info.hupel.isabelle.api.Environment.Context" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -381,6 +381,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="info.hupel.isabelle.api.Environment.Context#platform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="platform:info.hupel.isabelle.api.Platform"></a>
+      <a id="platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">platform</span><span class="result">: <a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.Environment$$Context@platform:info.hupel.isabelle.api.Platform" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="info.hupel.isabelle.api.Environment.Context#scheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="scheduler:monix.execution.Scheduler"></a>
       <a id="scheduler:Scheduler"></a>

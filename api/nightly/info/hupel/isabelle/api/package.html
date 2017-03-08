@@ -175,6 +175,23 @@ to enable seamless abstraction over multiple PIDEs.
       </a>
     </span>
       
+    </li><li name="info.hupel.isabelle.api.GenericEnvironment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenericEnvironmentextendsEnvironment"></a>
+      <a id="GenericEnvironment:GenericEnvironment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenericEnvironment.html"><span class="name">GenericEnvironment</span></a><span class="result"> extends <a href="Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@GenericEnvironmentextendsEnvironment" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="info.hupel.isabelle.api.Implementation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ImplementationextendsAnnotationwithAnnotationwithClassfileAnnotation"></a>
       <a id="Implementation:Implementation"></a>
@@ -209,6 +226,46 @@ to enable seamless abstraction over multiple PIDEs.
       </a>
     </span>
       
+    </li><li name="info.hupel.isabelle.api.OfficialPlatform" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OfficialPlatformextendsPlatform"></a>
+      <a id="OfficialPlatform:OfficialPlatform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OfficialPlatform.html"><span class="name">OfficialPlatform</span></a><span class="result"> extends <a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@OfficialPlatformextendsPlatform" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <code><a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></code> with known archive location.</p><div class="fullcomment"><div class="comment cmt"><p>A <code><a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></code> with known archive location.</p><p>Official platforms can be installed and bootstrapped automatically via the
+appropriate methods in <span class="extype" name="Setup$"><code>Setup</code></span>.
+</p></div></div>
+    </li><li name="info.hupel.isabelle.api.Platform" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PlatformextendsAnyRef"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform.html"><span class="name">Platform</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@PlatformextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The underlying operating system platform with knowlege of a
+<a href="Platform.html#localStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.api.Platform#localStorage">local storage</a> path.</p><div class="fullcomment"><div class="comment cmt"><p>The underlying operating system platform with knowlege of a
+<a href="Platform.html#localStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.api.Platform#localStorage">local storage</a> path.</p><p>It is recommended to obtain instances via the
+<a href="Platform$.html" class="extype" name="info.hupel.isabelle.api.Platform">companion object</a>.
+</p></div></div>
     </li><li name="info.hupel.isabelle.api.Properties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Properties=List[(String,String)]"></a>
       <a id="Properties:Properties"></a>
@@ -226,24 +283,23 @@ to enable seamless abstraction over multiple PIDEs.
       </a>
     </span>
       
-    </li><li name="info.hupel.isabelle.api.Version" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="VersionextendsProductwithSerializable"></a>
+    </li><li name="info.hupel.isabelle.api.Version" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VersionextendsAnyRef"></a>
       <a id="Version:Version"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">case class</span>
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Version.html"><span class="name">Version</span></a><span class="params">(<span name="identifier">identifier: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="Version.html"><span class="name">Version</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.api.package@VersionextendsProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@VersionextendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Represents the version of an Isabelle release.</p><div class="fullcomment"><div class="comment cmt"><p>Represents the version of an Isabelle release.</p><p>Repository snapshots are not supported.
-</p></div></div>
+      
     </li></ol>
             </div>
 
@@ -298,6 +354,40 @@ to enable seamless abstraction over multiple PIDEs.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#info.hupel.isabelle.api.package@Environment" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.Platform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Platform"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform$.html"><span class="name">Platform</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Platform" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Detection of the machine's <a href="Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">platform</a>.</p>
+    </li><li name="info.hupel.isabelle.api.Version" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Version"></a>
+      <a id="Version:Version"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Version$.html"><span class="name">Version</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@Version" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
