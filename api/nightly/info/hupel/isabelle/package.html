@@ -156,6 +156,23 @@ resulting XML documents.
 sent from the prover fails, this exception is fed into the corresponding
 <a href="Observer.html" class="extype" name="info.hupel.isabelle.Observer">observer</a>.
 </p></div></div>
+    </li><li name="info.hupel.isabelle.GenericEnvironment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenericEnvironmentextendsEnvironment"></a>
+      <a id="GenericEnvironment:GenericEnvironment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenericEnvironment.html"><span class="name">GenericEnvironment</span></a><span class="result"> extends <a href="api/Environment.html" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.package@GenericEnvironmentextendsEnvironment" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="info.hupel.isabelle.HTML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HTML=scalatags.Text.TypedTag[String]"></a>
       <a id="HTML:HTML"></a>
@@ -233,6 +250,25 @@ intermediate results. For that, combinators exist in the
 <a href="Observer$.html" class="extype" name="info.hupel.isabelle.Observer">companion object</a> and
 <code><a href="Operation$.html" class="extype" name="info.hupel.isabelle.Operation">Operation</a></code>.
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Operation.html" class="extype" name="info.hupel.isabelle.Operation">info.hupel.isabelle.Operation</a></p></span><span class="cmt"><p><a href="System.html#invoke[I,O](operation:info.hupel.isabelle.Operation[I,O])(arg:I):monix.execution.CancelableFuture[info.hupel.isabelle.ProverResult[O]]" class="extmbr" name="info.hupel.isabelle.System#invoke">info.hupel.isabelle.System#invoke</a></p></span></dd></dl></div>
+    </li><li name="info.hupel.isabelle.OfficialPlatform" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OfficialPlatformextendsPlatform"></a>
+      <a id="OfficialPlatform:OfficialPlatform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OfficialPlatform.html"><span class="name">OfficialPlatform</span></a><span class="result"> extends <a href="Platform.html" class="extype" name="info.hupel.isabelle.Platform">Platform</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.package@OfficialPlatformextendsPlatform" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <code><a href="Platform.html" class="extype" name="info.hupel.isabelle.Platform">Platform</a></code> with known archive location.</p><div class="fullcomment"><div class="comment cmt"><p>A <code><a href="Platform.html" class="extype" name="info.hupel.isabelle.Platform">Platform</a></code> with known archive location.</p><p>Official platforms can be installed and bootstrapped automatically via the
+appropriate methods in <a href="setup/Setup$.html" class="extype" name="info.hupel.isabelle.setup.Setup"><code>Setup</code></a>.
+</p></div></div>
     </li><li name="info.hupel.isabelle.Operation" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Operation[-I,+O]extendsAnyRef"></a>
       <a id="Operation[-I,+O]:Operation[I,O]"></a>
@@ -260,6 +296,27 @@ iteratees.</p><p>Operations can most easily be constructed with the
 <code><a href="Operation$.html#implicitly[I,O](name:String)(implicitevidence$1:info.hupel.isabelle.Codec[I],implicitevidence$2:info.hupel.isabelle.Codec[O]):info.hupel.isabelle.Operation[I,O]" class="extmbr" name="info.hupel.isabelle.Operation#implicitly">implicitly</a></code> combinator. That combinator will only
 wait for final results and ignore intermediate data.
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="System.html#invoke[I,O](operation:info.hupel.isabelle.Operation[I,O])(arg:I):monix.execution.CancelableFuture[info.hupel.isabelle.ProverResult[O]]" class="extmbr" name="info.hupel.isabelle.System#invoke">System#invoke</a></p></span></dd></dl></div>
+    </li><li name="info.hupel.isabelle.Platform" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PlatformextendsAnyRef"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform.html"><span class="name">Platform</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.package@PlatformextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The underlying operating system platform with knowlege of a
+<a href="Platform.html#localStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.Platform#localStorage">local storage</a> path.</p><div class="fullcomment"><div class="comment cmt"><p>The underlying operating system platform with knowlege of a
+<a href="Platform.html#localStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.Platform#localStorage">local storage</a> path.</p><p>It is recommended to obtain instances via the
+<a href="Platform$.html" class="extype" name="info.hupel.isabelle.Platform">companion object</a>.
+</p></div></div>
     </li><li name="info.hupel.isabelle.Program" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Program[A]=cats.free.Free[info.hupel.isabelle.Instruction,A]"></a>
       <a id="Program[A]:Program[A]"></a>
@@ -429,6 +486,23 @@ should contain an error message and a list of erroneous trees.
       </a>
     </span>
       <p class="shortcomment cmt">Combinators for <a href="Codec.html" class="extype" name="info.hupel.isabelle.Codec">codecs</a>.</p>
+    </li><li name="info.hupel.isabelle.GenericEnvironment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GenericEnvironment"></a>
+      <a id="GenericEnvironment:GenericEnvironment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GenericEnvironment$.html"><span class="name">GenericEnvironment</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.package@GenericEnvironment" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="info.hupel.isabelle.Instruction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Instruction"></a>
       <a id="Instruction:Instruction"></a>
@@ -480,6 +554,23 @@ should contain an error message and a list of erroneous trees.
       </a>
     </span>
       <p class="shortcomment cmt">Combinators for creating <a href="Operation.html" class="extype" name="info.hupel.isabelle.Operation">operations</a> and basic operations.</p>
+    </li><li name="info.hupel.isabelle.Platform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Platform"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform$.html"><span class="name">Platform</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#info.hupel.isabelle.package@Platform" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Detection of the machine's <a href="Platform.html" class="extype" name="info.hupel.isabelle.Platform">platform</a>.</p>
     </li><li name="info.hupel.isabelle.Program" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Program"></a>
       <a id="Program:Program"></a>

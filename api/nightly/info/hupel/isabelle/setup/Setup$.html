@@ -164,7 +164,7 @@ be downloaded from the Internet and extracted into the path.
       </a>
     </span>
       <p class="shortcomment cmt">Common trait for a reason why a <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> could not be
-<a href="#detect(platform:info.hupel.isabelle.api.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detected</a>.</p>
+<a href="#detect(platform:info.hupel.isabelle.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detected</a>.</p>
     </li><li name="info.hupel.isabelle.setup.Setup.SetupImpossible" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SetupImpossibleextendsAnyRef"></a>
       <a id="SetupImpossible:SetupImpossible"></a>
@@ -182,7 +182,7 @@ be downloaded from the Internet and extracted into the path.
       </a>
     </span>
       <p class="shortcomment cmt">Common trait for a reason why a <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> could not be
-<a href="#install(platform:info.hupel.isabelle.api.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">installed</a>.</p>
+<a href="#install(platform:info.hupel.isabelle.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">installed</a>.</p>
     </li></ol>
             </div>
 
@@ -331,11 +331,11 @@ be downloaded from the Internet and extracted into the path.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">The default setup: <a href="#guessPlatform:Option[info.hupel.isabelle.api.OfficialPlatform]" class="extmbr" name="info.hupel.isabelle.setup.Setup#guessPlatform">default platform</a>,
-<a href="#detect(platform:info.hupel.isabelle.api.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detect existing setup</a>,
-<a href="#install(platform:info.hupel.isabelle.api.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">install if not existing</a>.</p>
+      <p class="shortcomment cmt">The default setup: <a href="../Platform$.html#guess:Option[info.hupel.isabelle.OfficialPlatform]" class="extmbr" name="info.hupel.isabelle.Platform#guess">default platform</a>,
+<a href="#detect(platform:info.hupel.isabelle.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#detect">detect existing setup</a>,
+<a href="#install(platform:info.hupel.isabelle.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" class="extmbr" name="info.hupel.isabelle.setup.Setup#install">install if not existing</a>.</p>
     </li><li name="info.hupel.isabelle.setup.Setup#detect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="detect(platform:info.hupel.isabelle.api.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]"></a>
+      <a id="detect(platform:info.hupel.isabelle.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]"></a>
       <a id="detect(Platform,Stable):Either[NoSetup,Setup]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -343,15 +343,15 @@ be downloaded from the Internet and extracted into the path.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">detect</span><span class="params">(<span name="platform">platform: <a href="../api/Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version$$Stable.html" class="extype" name="info.hupel.isabelle.api.Version.Stable">Stable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.Either" class="extype" target="_top">Either</a>[<a href="Setup$$NoSetup.html" class="extype" name="info.hupel.isabelle.setup.Setup.NoSetup">NoSetup</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
+        <span class="name">detect</span><span class="params">(<span name="platform">platform: <a href="../Platform.html" class="extype" name="info.hupel.isabelle.Platform">Platform</a></span>, <span name="version">version: <a href="../api/Version$$Stable.html" class="extype" name="info.hupel.isabelle.api.Version.Stable">Stable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.Either" class="extype" target="_top">Either</a>[<a href="Setup$$NoSetup.html" class="extype" name="info.hupel.isabelle.setup.Setup.NoSetup">NoSetup</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@detect(platform:info.hupel.isabelle.api.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@detect(platform:info.hupel.isabelle.Platform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.NoSetup,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Try to find an existing <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">setup</a> in the
-<span class="extype" name="Platform#setupStorage:*">designated path</span> of the <span class="extype" name="Platform">platform</span>.</p>
+<a href="../Platform.html#setupStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.Platform#setupStorage">designated path</a> of the <a href="../Platform.html" class="extype" name="info.hupel.isabelle.Platform">platform</a>.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -426,25 +426,6 @@ be downloaded from the Internet and extracted into the path.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="info.hupel.isabelle.setup.Setup#guessPlatform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="guessPlatform:Option[info.hupel.isabelle.api.OfficialPlatform]"></a>
-      <a id="guessPlatform:Option[OfficialPlatform]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">guessPlatform</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="../api/OfficialPlatform.html" class="extype" name="info.hupel.isabelle.api.OfficialPlatform">OfficialPlatform</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@guessPlatform:Option[info.hupel.isabelle.api.OfficialPlatform]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Make an educated guess at the
-<a href="../api/Platform.html" class="extype" name="info.hupel.isabelle.api.Platform">platform</a>, not guaranteed to be
-correct.</p>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -463,7 +444,7 @@ correct.</p>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="info.hupel.isabelle.setup.Setup#install" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="install(platform:info.hupel.isabelle.api.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]"></a>
+      <a id="install(platform:info.hupel.isabelle.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]"></a>
       <a id="install(OfficialPlatform,Stable):Either[SetupImpossible,Setup]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -471,16 +452,16 @@ correct.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">install</span><span class="params">(<span name="platform">platform: <a href="../api/OfficialPlatform.html" class="extype" name="info.hupel.isabelle.api.OfficialPlatform">OfficialPlatform</a></span>, <span name="version">version: <a href="../api/Version$$Stable.html" class="extype" name="info.hupel.isabelle.api.Version.Stable">Stable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.Either" class="extype" target="_top">Either</a>[<a href="Setup$$SetupImpossible.html" class="extype" name="info.hupel.isabelle.setup.Setup.SetupImpossible">SetupImpossible</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
+        <span class="name">install</span><span class="params">(<span name="platform">platform: <a href="../OfficialPlatform.html" class="extype" name="info.hupel.isabelle.OfficialPlatform">OfficialPlatform</a></span>, <span name="version">version: <a href="../api/Version$$Stable.html" class="extype" name="info.hupel.isabelle.api.Version.Stable">Stable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.Either" class="extype" target="_top">Either</a>[<a href="Setup$$SetupImpossible.html" class="extype" name="info.hupel.isabelle.setup.Setup.SetupImpossible">SetupImpossible</a>, <a href="Setup.html" class="extype" name="info.hupel.isabelle.setup.Setup">Setup</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@install(platform:info.hupel.isabelle.api.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
+      <a href="../../../../index.html#info.hupel.isabelle.setup.Setup$@install(platform:info.hupel.isabelle.OfficialPlatform,version:info.hupel.isabelle.api.Version.Stable):scala.util.Either[info.hupel.isabelle.setup.Setup.SetupImpossible,info.hupel.isabelle.setup.Setup]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Download an official copy of Isabelle from the Internet and extract it
-in the <span class="extype" name="Platform#setupStorage:*">designated path</span> according to the
-<span class="extype" name="Platform">platform</span>.</p>
+in the <a href="../Platform.html#setupStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.Platform#setupStorage">designated path</a> according to the
+<a href="../Platform.html" class="extype" name="info.hupel.isabelle.Platform">platform</a>.</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
