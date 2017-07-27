@@ -142,7 +142,7 @@ object.
 an environment knows how to manage Isabelle processes. It can also manage
 multiple running processes at the same time.</p><p>A subclass of this class is called <i>implementation</i> throughout
 <code>libisabelle</code>.</p><p>It is highly recommended to use
-<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path,components:List[java.nio.file.Path])(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
+<code><a href="../setup/Setup.html#makeEnvironment(resolver:info.hupel.isabelle.setup.Resolver,user:java.nio.file.Path,components:List[java.nio.file.Path],options:List[info.hupel.isabelle.api.OptionKey.Update])(implicitscheduler:monix.execution.Scheduler):scala.concurrent.Future[info.hupel.isabelle.api.Environment]" class="extmbr" name="info.hupel.isabelle.setup.Setup#makeEnvironment">Setup.makeEnvironment</a></code>
 to instantiate implementations.</p><p>While implementations may be created freely by users, it is recommended to
 only use the bundled implementations for the supported Isabelle versions.
 By convention, they live in the package specified in
@@ -205,6 +205,23 @@ to enable seamless abstraction over multiple PIDEs.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#info.hupel.isabelle.api.package@Markup=(String,info.hupel.isabelle.api.package.Properties)" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.OptionKey" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OptionKey[T]extendsAnyRef"></a>
+      <a id="OptionKey[T]:OptionKey[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OptionKey.html"><span class="name">OptionKey</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://scala-lang.org/files/archive/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@OptionKey[T]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -297,6 +314,23 @@ to enable seamless abstraction over multiple PIDEs.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#info.hupel.isabelle.api.package@Environment" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="info.hupel.isabelle.api.OptionKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionKey"></a>
+      <a id="OptionKey:OptionKey"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="OptionKey$.html"><span class="name">OptionKey</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#info.hupel.isabelle.api.package@OptionKey" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

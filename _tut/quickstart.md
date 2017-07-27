@@ -20,14 +20,14 @@ val setup = Setup.default(Version.Stable("2016"), false).right.get
 // setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>)
 
 val resources = Resources.dumpIsabelleResources().right.get
-// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources2135448855984922318,List(/tmp/libisabelle_resources2135448855984922318/libisabelle, /tmp/libisabelle_resources2135448855984922318/classy, /tmp/libisabelle_resources2135448855984922318/multi-isabelle))
+// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources6235564996086916484,List(/tmp/libisabelle_resources6235564996086916484/libisabelle, /tmp/libisabelle_resources6235564996086916484/classy, /tmp/libisabelle_resources6235564996086916484/multi-isabelle))
 
 val config = Configuration.simple("Protocol")
 // config: info.hupel.isabelle.api.Configuration = session Protocol
 
 val transaction =
   for {
-    env <- setup.makeEnvironment(resources)
+    env <- setup.makeEnvironment(resources, Nil)
     sys <- System.create(env, config)
     response <- sys.invoke(Operation.Hello)("world")
     () <- sys.dispose
