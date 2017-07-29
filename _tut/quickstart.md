@@ -16,11 +16,11 @@ import info.hupel.isabelle._, info.hupel.isabelle.api._, info.hupel.isabelle.set
 // import info.hupel.isabelle.api._
 // import info.hupel.isabelle.setup._
 
-val setup = Setup.default(Version.Stable("2016"), false).right.get
-// setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016,Linux,<Isabelle2016>)
+val setup = Setup.default(Version.Stable("2016-1"), false).right.get
+// setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016-1,Linux,<Isabelle2016-1>)
 
 val resources = Resources.dumpIsabelleResources().right.get
-// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources9197985185393633384,List(/tmp/libisabelle_resources9197985185393633384/libisabelle, /tmp/libisabelle_resources9197985185393633384/classy, /tmp/libisabelle_resources9197985185393633384/multi-isabelle))
+// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources1807419725345958647,List(/tmp/libisabelle_resources1807419725345958647/libisabelle, /tmp/libisabelle_resources1807419725345958647/classy, /tmp/libisabelle_resources1807419725345958647/multi-isabelle))
 
 val config = Configuration.simple("Protocol")
 // config: info.hupel.isabelle.api.Configuration = session Protocol
@@ -32,7 +32,7 @@ val transaction =
     response <- sys.invoke(Operation.Hello)("world")
     () <- sys.dispose
   } yield response.unsafeGet
-// transaction: scala.concurrent.Future[String] = List()
+// transaction: scala.concurrent.Future[String] = Future(<not completed>)
 
 val response = Await.result(transaction, Duration.Inf)
 // response: String = Hello world

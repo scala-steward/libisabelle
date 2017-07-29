@@ -1,80 +1,160 @@
 <!DOCTYPE html >
 <html>
         <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <title></title>
           <meta name="description" content="" />
           <meta name="keywords" content="" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
       <script type="text/javascript" src="lib/jquery.js"></script>
-      <script type="text/javascript" src="lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="lib/jquery.layout.js"></script>
+      <script type="text/javascript" src="lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="lib/jquery.mousewheel.min.js"></script>
       <script type="text/javascript" src="lib/index.js"></script>
+      <script type="text/javascript" src="index.js"></script>
       <script type="text/javascript" src="lib/scheduler.js"></script>
+      <script type="text/javascript" src="lib/template.js"></script>
+      <script type="text/javascript" src="lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '';
+      </script>
     
         </head>
         <body>
-      <div id="library">
-        <img class="class icon" alt="class icon" src="lib/class.png" />
-        <img class="trait icon" alt="trait icon" src="lib/trait.png" />
-        <img class="object icon" alt="trait icon" src="lib/object.png" />
-        <img class="package icon" alt="trait icon" src="lib/package.png" />
-      </div>
-      <div id="browser" class="ui-layout-west">
-      <div class="ui-west-center">
-      <div id="filter">
-          <div id="textfilter"></div>
-          <div id="letters"><a target="template" href="index/index-_.html">#</a><a target="template" href="index/index-a.html">A</a><a target="template" href="index/index-b.html">B</a><a target="template" href="index/index-c.html">C</a><a target="template" href="index/index-d.html">D</a><a target="template" href="index/index-e.html">E</a><a target="template" href="index/index-f.html">F</a><a target="template" href="index/index-g.html">G</a><a target="template" href="index/index-h.html">H</a><a target="template" href="index/index-i.html">I</a><a target="template" href="index/index-j.html">J</a><a target="template" href="index/index-k.html">K</a><a target="template" href="index/index-l.html">L</a><a target="template" href="index/index-m.html">M</a><a target="template" href="index/index-n.html">N</a><a target="template" href="index/index-o.html">O</a><a target="template" href="index/index-p.html">P</a><span>Q</span><a target="template" href="index/index-r.html">R</a><a target="template" href="index/index-s.html">S</a><a target="template" href="index/index-t.html">T</a><a target="template" href="index/index-u.html">U</a><a target="template" href="index/index-v.html">V</a><a target="template" href="index/index-w.html">W</a><a target="template" href="index/index-x.html">X</a><span>Y</span><span>Z</span> – <span>deprecated</span></div>
-      </div>
-      <div class="pack" id="tpl">
-            
-            <ol class="templates"></ol>
-            <ol class="packages"> <li class="pack" title="info">
-            <a class="tplshow" href="info/package.html" target="template">info</a>
-            <ol class="templates"></ol>
-            <ol class="packages"> <li class="pack" title="info.hupel">
-            <a class="tplshow" href="info/hupel/package.html" target="template">info.hupel</a>
-            <ol class="templates"></ol>
-            <ol class="packages"> <li class="pack" title="info.hupel.isabelle">
-            <a class="tplshow" href="info/hupel/isabelle/package.html" target="template">info.hupel.isabelle</a>
-            <ol class="templates"><li title="info.hupel.isabelle.CancelableFutureOps"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/package$$CancelableFutureOps.html" target="template"><span class="class">(class)</span><span class="tplLink">CancelableFutureOps</span></a></li><li title="info.hupel.isabelle.Codec"><a class="tplshow" href="info/hupel/isabelle/Codec$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Codec.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Codec</span></a></li><li title="info.hupel.isabelle.DecodingException"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/DecodingException.html" target="template"><span class="case class">(case class)</span><span class="tplLink">DecodingException</span></a></li><li title="info.hupel.isabelle.GenericEnvironment"><a class="tplshow" href="info/hupel/isabelle/GenericEnvironment$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/GenericEnvironment.html" target="template"><span class="class">(class)</span><span class="tplLink">GenericEnvironment</span></a></li><li title="info.hupel.isabelle.Instruction"><a class="tplshow" href="info/hupel/isabelle/Instruction$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Instruction.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Instruction</span></a></li><li title="info.hupel.isabelle.Model"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/Model.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Model</span></a></li><li title="info.hupel.isabelle.Observer"><a class="tplshow" href="info/hupel/isabelle/Observer$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Observer.html" target="template"><span class="class">(class)</span><span class="tplLink">Observer</span></a></li><li title="info.hupel.isabelle.OfficialPlatform"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/OfficialPlatform.html" target="template"><span class="class">(class)</span><span class="tplLink">OfficialPlatform</span></a></li><li title="info.hupel.isabelle.Operation"><a class="tplshow" href="info/hupel/isabelle/Operation$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Operation.html" target="template"><span class="class">(class)</span><span class="tplLink">Operation</span></a></li><li title="info.hupel.isabelle.Platform"><a class="tplshow" href="info/hupel/isabelle/Platform$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Platform.html" target="template"><span class="class">(class)</span><span class="tplLink">Platform</span></a></li><li title="info.hupel.isabelle.Program"><a class="tplshow" href="info/hupel/isabelle/package$$Program$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Program</span></a></li><li title="info.hupel.isabelle.ProverResult"><a class="tplshow" href="info/hupel/isabelle/ProverResult$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/ProverResult.html" target="template"><span class="trait">(trait)</span><span class="tplLink">ProverResult</span></a></li><li title="info.hupel.isabelle.Range"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/Range.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Range</span></a></li><li title="info.hupel.isabelle.Region"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/Region.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Region</span></a></li><li title="info.hupel.isabelle.Regions"><a class="tplshow" href="info/hupel/isabelle/Regions$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Regions.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Regions</span></a></li><li title="info.hupel.isabelle.Reports"><a class="tplshow" href="info/hupel/isabelle/Reports$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/Reports.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Reports</span></a></li><li title="info.hupel.isabelle.System"><a class="tplshow" href="info/hupel/isabelle/System$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/System.html" target="template"><span class="class">(class)</span><span class="tplLink">System</span></a></li></ol>
-            <ol class="packages"> <li class="pack" title="info.hupel.isabelle.api">
-            <a class="tplshow" href="info/hupel/isabelle/api/package.html" target="template">info.hupel.isabelle.api</a>
-            <ol class="templates"><li title="info.hupel.isabelle.api.BuildInfo"><a class="tplshow" href="info/hupel/isabelle/api/BuildInfo$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">BuildInfo</span></a></li><li title="info.hupel.isabelle.api.Configuration"><a class="tplshow" href="info/hupel/isabelle/api/Configuration$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/api/Configuration.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Configuration</span></a></li><li title="info.hupel.isabelle.api.Environment"><a class="tplshow" href="info/hupel/isabelle/api/Environment$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/api/Environment.html" target="template"><span class="class">(class)</span><span class="tplLink">Environment</span></a></li><li title="info.hupel.isabelle.api.ExitTrap"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/api/ExitTrap.html" target="template"><span class="case class">(case class)</span><span class="tplLink">ExitTrap</span></a></li><li title="info.hupel.isabelle.api.Implementation"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/api/Implementation.html" target="template"><span class="class">(class)</span><span class="tplLink">Implementation</span></a></li><li title="info.hupel.isabelle.api.OptionKey"><a class="tplshow" href="info/hupel/isabelle/api/OptionKey$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/api/OptionKey.html" target="template"><span class="class">(class)</span><span class="tplLink">OptionKey</span></a></li><li title="info.hupel.isabelle.api.Version"><a class="tplshow" href="info/hupel/isabelle/api/Version$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/api/Version.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Version</span></a></li><li title="info.hupel.isabelle.api.XML"><a class="tplshow" href="info/hupel/isabelle/api/XML$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">XML</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.hol">
-            <a class="tplshow" href="info/hupel/isabelle/hol/package.html" target="template">info.hupel.isabelle.hol</a>
-            <ol class="templates"><li title="info.hupel.isabelle.hol.BoolExprOps"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/hol/package$$BoolExprOps.html" target="template"><span class="class">(class)</span><span class="tplLink">BoolExprOps</span></a></li><li title="info.hupel.isabelle.hol.HOLExprOps"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/hol/package$$HOLExprOps.html" target="template"><span class="class">(class)</span><span class="tplLink">HOLExprOps</span></a></li><li title="info.hupel.isabelle.hol.HOLogic"><a class="tplshow" href="info/hupel/isabelle/hol/HOLogic$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">HOLogic</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.internal">
-            <a class="tplshow" href="info/hupel/isabelle/internal/package.html" target="template">info.hupel.isabelle.internal</a>
-            <ol class="templates"><li title="info.hupel.isabelle.internal.Macros"><a class="tplshow" href="info/hupel/isabelle/internal/Macros$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/internal/Macros.html" target="template"><span class="class">(class)</span><span class="tplLink">Macros</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.japi">
-            <a class="tplshow" href="info/hupel/isabelle/japi/package.html" target="template">info.hupel.isabelle.japi</a>
-            <ol class="templates"><li title="info.hupel.isabelle.japi.Codecs"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/Codecs.html" target="template"><span class="class">(class)</span><span class="tplLink">Codecs</span></a></li><li title="info.hupel.isabelle.japi.JMarkup"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/JMarkup.html" target="template"><span class="class">(class)</span><span class="tplLink">JMarkup</span></a></li><li title="info.hupel.isabelle.japi.JPlatform"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/JPlatform.html" target="template"><span class="class">(class)</span><span class="tplLink">JPlatform</span></a></li><li title="info.hupel.isabelle.japi.JRegion"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/JRegion.html" target="template"><span class="class">(class)</span><span class="tplLink">JRegion</span></a></li><li title="info.hupel.isabelle.japi.JRegions"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/JRegions.html" target="template"><span class="class">(class)</span><span class="tplLink">JRegions</span></a></li><li title="info.hupel.isabelle.japi.JReports"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/JReports.html" target="template"><span class="class">(class)</span><span class="tplLink">JReports</span></a></li><li title="info.hupel.isabelle.japi.JResources"><a class="tplshow" href="info/hupel/isabelle/japi/JResources$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/japi/JResources.html" target="template"><span class="class">(class)</span><span class="tplLink">JResources</span></a></li><li title="info.hupel.isabelle.japi.JSetup"><a class="tplshow" href="info/hupel/isabelle/japi/JSetup$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">JSetup</span></a></li><li title="info.hupel.isabelle.japi.JSystem"><a class="tplshow" href="info/hupel/isabelle/japi/JSystem$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/japi/JSystem.html" target="template"><span class="class">(class)</span><span class="tplLink">JSystem</span></a></li><li title="info.hupel.isabelle.japi.MarkupProcessor"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/MarkupProcessor.html" target="template"><span class="trait">(trait)</span><span class="tplLink">MarkupProcessor</span></a></li><li title="info.hupel.isabelle.japi.Operations"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/japi/Operations.html" target="template"><span class="class">(class)</span><span class="tplLink">Operations</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.ml">
-            <a class="tplshow" href="info/hupel/isabelle/ml/package.html" target="template">info.hupel.isabelle.ml</a>
-            <ol class="templates"><li title="info.hupel.isabelle.ml.Expr"><a class="tplshow" href="info/hupel/isabelle/ml/Expr$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/ml/Expr.html" target="template"><span class="class">(class)</span><span class="tplLink">Expr</span></a></li><li title="info.hupel.isabelle.ml.Opaque"><a class="tplshow" href="info/hupel/isabelle/ml/Opaque$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/ml/Opaque.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Opaque</span></a></li><li title="info.hupel.isabelle.ml.Ref"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/ml/Ref.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Ref</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.pure">
-            <a class="tplshow" href="info/hupel/isabelle/pure/package.html" target="template">info.hupel.isabelle.pure</a>
-            <ol class="templates"><li title="info.hupel.isabelle.pure.Abs"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Abs.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Abs</span></a></li><li title="info.hupel.isabelle.pure.App"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/App.html" target="template"><span class="case class">(case class)</span><span class="tplLink">App</span></a></li><li title="info.hupel.isabelle.pure.Bound"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Bound.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Bound</span></a></li><li title="info.hupel.isabelle.pure.Cexpr"><a class="tplshow" href="info/hupel/isabelle/pure/Cexpr$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Cexpr.html" target="template"><span class="class">(class)</span><span class="tplLink">Cexpr</span></a></li><li title="info.hupel.isabelle.pure.Const"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Const.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Const</span></a></li><li title="info.hupel.isabelle.pure.Context"><a class="tplshow" href="info/hupel/isabelle/pure/package$$Context$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Context</span></a></li><li title="info.hupel.isabelle.pure.Cterm"><a class="tplshow" href="info/hupel/isabelle/pure/package$$Cterm$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Cterm</span></a></li><li title="info.hupel.isabelle.pure.Embeddable"><a class="tplshow" href="info/hupel/isabelle/pure/Embeddable$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Embeddable.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Embeddable</span></a></li><li title="info.hupel.isabelle.pure.Expr"><a class="tplshow" href="info/hupel/isabelle/pure/Expr$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Expr.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Expr</span></a></li><li title="info.hupel.isabelle.pure.ExprStringContext"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/package$$ExprStringContext.html" target="template"><span class="class">(class)</span><span class="tplLink">ExprStringContext</span></a></li><li title="info.hupel.isabelle.pure.Free"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Free.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Free</span></a></li><li title="info.hupel.isabelle.pure.Prop"><a class="tplshow" href="info/hupel/isabelle/pure/Prop$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Prop.html" target="template"><span class="class">(class)</span><span class="tplLink">Prop</span></a></li><li title="info.hupel.isabelle.pure.Term"><a class="tplshow" href="info/hupel/isabelle/pure/Term$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Term.html" target="template"><span class="class">(class)</span><span class="tplLink">Term</span></a></li><li title="info.hupel.isabelle.pure.TFree"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/TFree.html" target="template"><span class="case class">(case class)</span><span class="tplLink">TFree</span></a></li><li title="info.hupel.isabelle.pure.Theory"><a class="tplshow" href="info/hupel/isabelle/pure/package$$Theory$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Theory</span></a></li><li title="info.hupel.isabelle.pure.Thm"><a class="tplshow" href="info/hupel/isabelle/pure/package$$Thm$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Thm</span></a></li><li title="info.hupel.isabelle.pure.TVar"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/TVar.html" target="template"><span class="case class">(case class)</span><span class="tplLink">TVar</span></a></li><li title="info.hupel.isabelle.pure.Typ"><a class="tplshow" href="info/hupel/isabelle/pure/Typ$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Typ.html" target="template"><span class="class">(class)</span><span class="tplLink">Typ</span></a></li><li title="info.hupel.isabelle.pure.Type"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Type.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Type</span></a></li><li title="info.hupel.isabelle.pure.Typeable"><a class="tplshow" href="info/hupel/isabelle/pure/Typeable$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/pure/Typeable.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Typeable</span></a></li><li title="info.hupel.isabelle.pure.Var"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/pure/Var.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Var</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li><li class="pack" title="info.hupel.isabelle.setup">
-            <a class="tplshow" href="info/hupel/isabelle/setup/package.html" target="template">info.hupel.isabelle.setup</a>
-            <ol class="templates"><li title="info.hupel.isabelle.setup.Artifacts"><a class="tplshow" href="info/hupel/isabelle/setup/Artifacts$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Artifacts</span></a></li><li title="info.hupel.isabelle.setup.Devel"><a class="tplshow" href="info/hupel/isabelle/setup/Devel$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/setup/Devel.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Devel</span></a></li><li title="info.hupel.isabelle.setup.GitDevel"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/setup/GitDevel.html" target="template"><span class="case class">(case class)</span><span class="tplLink">GitDevel</span></a></li><li title="info.hupel.isabelle.setup.Resolver"><a class="tplshow" href="info/hupel/isabelle/setup/Resolver$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/setup/Resolver.html" target="template"><span class="trait">(trait)</span><span class="tplLink">Resolver</span></a></li><li title="info.hupel.isabelle.setup.Resources"><a class="tplshow" href="info/hupel/isabelle/setup/Resources$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/setup/Resources.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Resources</span></a></li><li title="info.hupel.isabelle.setup.Setup"><a class="tplshow" href="info/hupel/isabelle/setup/Setup$.html" target="template"><span class="object">(object)</span></a><a class="tplshow" href="info/hupel/isabelle/setup/Setup.html" target="template"><span class="case class">(case class)</span><span class="tplLink">Setup</span></a></li><li title="info.hupel.isabelle.setup.Tar"><a class="tplshow" href="info/hupel/isabelle/setup/Tar$.html" target="template"><span class="object">(object)</span><div class="placeholder"></div><span class="tplLink">Tar</span></a></li><li title="info.hupel.isabelle.setup.TaskOps"><div class="placeholder"></div><a class="tplshow" href="info/hupel/isabelle/setup/package$$TaskOps.html" target="template"><span class="class">(class)</span><span class="tplLink">TaskOps</span></a></li></ol>
-            <ol class="packages"> </ol>
-          </li></ol>
-          </li></ol>
-          </li></ol>
-          </li></ol>
-          </div></div><script src="index.js"></script>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
     </div>
-      <div id="content" class="ui-layout-center">
-        <iframe id="template" name="template" src="package.html"></iframe>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 current" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span>
+      </span>
+      
+      
+    </li><li name="_root_.info" visbl="pub" class="indented1 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="info"></a><a id="info:info"></a>
+      <span class="permalink">
+      <a href="index.html#info" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="info/index.html">
+              <span class="name">info</span>
+            </a>
+      </span>
+      
+      
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        
+        <h1>root package<span class="permalink">
+      <a href="index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
       </div>
     </body>
       </html>
