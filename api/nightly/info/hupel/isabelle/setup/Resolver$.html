@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title></title>
-          <meta name="description" content="" />
-          <meta name="keywords" content="" />
+          <title>libisabelle 0.9.0-SNAPSHOT - info.hupel.isabelle.setup.Resolver</title>
+          <meta name="description" content="libisabelle 0.9.0 - SNAPSHOT - info.hupel.isabelle.setup.Resolver" />
+          <meta name="keywords" content="libisabelle 0.9.0 SNAPSHOT info.hupel.isabelle.setup.Resolver" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title"><span id="doc-version"></span></span>
+        <span id="doc-title">libisabelle<span id="doc-version">0.9.0-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -233,7 +233,8 @@ version.">
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p><a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a> instances.</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p><a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a> instances.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/0ced7bb942962f9be99bbe0f5a92fc58d8469216
+/modules/setup/src/main/scala/Resolver.scala" target="_blank">Resolver.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -283,7 +284,30 @@ version.">
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="info.hupel.isabelle.setup.Resolver.Maven" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MavenextendsResolver"></a><a id="Maven:Maven"></a>
+      <span class="permalink">
+      <a href="../../../../info/hupel/isabelle/setup/Resolver$.html#MavenextendsResolver" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Maven-/Ivy-based resolver." href="Resolver$$Maven.html">
+              <span class="name">Maven</span>
+            </a><span class="result"> extends <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">Resolver</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Maven-/Ivy-based <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Maven-/Ivy-based <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a>.</p><p>Uses <code>coursier</code> under the hood to resolve artifacts from Maven and Ivy
+repositories.
+</p></div></div>
+    </li></ol>
+            </div>
 
         
 
@@ -354,7 +378,7 @@ version.">
       </span>
       
       <p class="shortcomment cmt">Default resolver: look in the <a href="Resolver$$Classpath$.html" class="extype" name="info.hupel.isabelle.setup.Resolver.Classpath">classpath</a> first, then resolve
-via <a href="Resolver$$Maven$.html" class="extype" name="info.hupel.isabelle.setup.Resolver.Maven">Maven</a>.</p>
+via <a href="Resolver$$Maven.html" class="extype" name="info.hupel.isabelle.setup.Resolver.Maven">Maven</a>.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -662,26 +686,6 @@ via <a href="Resolver$$Maven$.html" class="extype" name="info.hupel.isabelle.set
 a resource named <code>pide-$version-assembly.jar</code> in the classpath. Because
 Java URLs cannot be nested, this resolver then writes this resource to a
 temporary file.
-</p></div></div>
-    </li><li name="info.hupel.isabelle.setup.Resolver.Maven" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Maven"></a><a id="Maven:Maven"></a>
-      <span class="permalink">
-      <a href="../../../../info/hupel/isabelle/setup/Resolver$.html#Maven" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="Maven-/Ivy-based resolver." href="Resolver$$Maven$.html">
-              <span class="name">Maven</span>
-            </a><span class="result"> extends <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">Resolver</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Maven-/Ivy-based <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Maven-/Ivy-based <a href="Resolver.html" class="extype" name="info.hupel.isabelle.setup.Resolver">resolver</a>.</p><p>Uses <code>coursier</code> under the hood to resolve artifacts from Maven and Ivy
-repositories.
 </p></div></div>
     </li>
               </ol>
