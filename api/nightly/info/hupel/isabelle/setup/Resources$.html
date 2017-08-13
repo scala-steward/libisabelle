@@ -233,12 +233,12 @@ version.">
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utilities to extract <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">resources</a> from the classpath.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/7edf215e1884c6f996caa39779df9d4554e8101b
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utilities to extract <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">resources</a> from the classpath.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/3615a21005472db74a047c87f9bd9a2ce41f8d53
 /modules/setup/src/main/scala/Resources.scala" target="_blank">Resources.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a>, <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
         </div></div>
         
 
@@ -428,7 +428,7 @@ version.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dumpIsabelleResources</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="classLoader">classLoader: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<a href="Resources$$Error.html" class="extype" name="info.hupel.isabelle.setup.Resources.Error">Error</a>, <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Resources</a>]</span>
+        <span class="name">dumpIsabelleResources</span><span class="params">(<span name="path">path: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>, <span name="classLoader">classLoader: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html#java.lang.ClassLoader" class="extype" name="java.lang.ClassLoader">ClassLoader</a></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<a href="Resources$$Error.html" class="extype" name="info.hupel.isabelle.setup.Resources.Error">Error</a>, <a href="Resources.html" class="extype" name="info.hupel.isabelle.setup.Resources">Resources</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Searches the specified class loader for Isabelle source files.</p><div class="fullcomment"><div class="comment cmt"><p>Searches the specified class loader for Isabelle source files.</p><p>Isabelle sources files can be automatically managed by <code>libisabelle</code>. When
@@ -541,7 +541,7 @@ using a temporary path and the current class loader.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#java.lang.Class" class="extype" name="java.lang.Class">Class</a>[_]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -653,7 +653,7 @@ using a temporary path and the current class loader.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -754,7 +754,7 @@ using a temporary path and the current class loader.
         <div class="parent" name="scala.Serializable">
               <h3>Inherited from <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
             </div><div class="parent" name="java.io.Serializable">
-              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+              <h3>Inherited from <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html#java.io.Serializable" class="extype" name="java.io.Serializable">Serializable</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

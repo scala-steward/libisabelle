@@ -265,12 +265,6 @@ Most functions in this package have some effect on the local file system and
 may download content from the Internet.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="info.hupel.isabelle">isabelle</a></dd></dl></div>
     </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="package$$CancelableFutureOps.html" title=""></a>
-                        <a href="package$$CancelableFutureOps.html" title="">
-                          CancelableFutureOps
-                        </a>
-                      </li><li class="current-entities indented3">
                         <a class="object" href="Codec$.html" title="Combinators for codecs."></a>
                         <a class="trait" href="Codec.html" title="A type class representing the ability to convert a type to and from an XML
 representation."></a>
@@ -407,7 +401,7 @@ local storage path.">
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The underlying operating system platform with knowlege of a
 <a href="#localStorage:java.nio.file.Path" class="extmbr" name="info.hupel.isabelle.Platform#localStorage">local storage</a> path.</p><p>It is recommended to obtain instances via the
 <a href="Platform$.html" class="extype" name="info.hupel.isabelle.Platform">companion object</a>.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/7edf215e1884c6f996caa39779df9d4554e8101b
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/3615a21005472db74a047c87f9bd9a2ce41f8d53
 /modules/libisabelle/src/main/scala/Platform.scala" target="_blank">Platform.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -479,7 +473,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">localStorage</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">localStorage</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       <p class="shortcomment cmt">Path where <code>libisabelle</code> stores files downloaded from the Internet.</p>
@@ -495,7 +489,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withLocalStorage</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <a href="" class="extype" name="info.hupel.isabelle.Platform">Platform</a></span>
+        <span class="name">withLocalStorage</span><span class="params">(<span name="path">path: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>)</span><span class="result">: <a href="" class="extype" name="info.hupel.isabelle.Platform">Platform</a></span>
       </span>
       
       
@@ -657,7 +651,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#java.lang.Class" class="extype" name="java.lang.Class">Class</a>[_]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -705,7 +699,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lockFile</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">lockFile</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -769,7 +763,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resourcesStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">resourcesStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -785,7 +779,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setupStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="resolved">resolved: <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">setupStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="resolved">resolved: <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -801,7 +795,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setupStorage</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">setupStorage</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -833,7 +827,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -849,7 +843,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">userStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">userStorage</span><span class="params">(<span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>)</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -865,7 +859,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">versionedStorage</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">versionedStorage</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
@@ -963,7 +957,7 @@ local storage path.">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withIsabelleVersion</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="resolved">resolved: <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <span class="extype" name="java.nio.file.Path">Path</span></span>
+        <span class="name">withIsabelleVersion</span><span class="params">(<span name="path">path: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>, <span name="version">version: <a href="api/Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a></span>, <span name="resolved">resolved: <a href="http://scala-lang.org/files/archive/api/2.12.3/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#java.nio.file.Path" class="extype" name="java.nio.file.Path">Path</a></span>
       </span>
       
       
