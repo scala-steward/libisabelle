@@ -221,7 +221,7 @@ Isabelle itself and is not under control of <code>libisabelle</code>), it is imp
 to have multiple environments for different versions in the same class
 loader. This is the primary reason why this class exists in the first place,
 to enable seamless abstraction over multiple PIDEs.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></dd><dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/646dac2818f135cba2fe7ac119cf654455fd1af8
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="info.hupel.isabelle.api.Environment">Environment</a></dd><dt>Source</dt><dd><a href="https://github.com/larsrh/libisabelle/blob/4fbabdcea6feeaaad474f154ac7459e0e5f465e5
 /modules/pide-interface/src/main/scala/Environment.scala" target="_blank">Environment.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
@@ -278,9 +278,9 @@ to enable seamless abstraction over multiple PIDEs.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="info.hupel.isabelle.api.Environment#&lt;init&gt;" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(context:info.hupel.isabelle.api.Environment.Context,versionOverride:Option[info.hupel.isabelle.api.Version]):info.hupel.isabelle.api.Environment"></a><a id="&lt;init&gt;:Environment"></a>
+      <a id="&lt;init&gt;(context:info.hupel.isabelle.api.Environment.Context,versionOverride:Option[info.hupel.isabelle.api.Version],checkClassLoader:Boolean):info.hupel.isabelle.api.Environment"></a><a id="&lt;init&gt;:Environment"></a>
       <span class="permalink">
-      <a href="../../../../info/hupel/isabelle/api/Environment.html#&lt;init&gt;(context:info.hupel.isabelle.api.Environment.Context,versionOverride:Option[info.hupel.isabelle.api.Version]):info.hupel.isabelle.api.Environment" title="Permalink">
+      <a href="../../../../info/hupel/isabelle/api/Environment.html#&lt;init&gt;(context:info.hupel.isabelle.api.Environment.Context,versionOverride:Option[info.hupel.isabelle.api.Version],checkClassLoader:Boolean):info.hupel.isabelle.api.Environment" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -289,7 +289,7 @@ to enable seamless abstraction over multiple PIDEs.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Environment</span><span class="params">(<span name="context">context: <a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Context</a></span>, <span name="versionOverride">versionOverride: <a href="http://scala-lang.org/files/archive/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">Environment</span><span class="params">(<span name="context">context: <a href="Environment$$Context.html" class="extype" name="info.hupel.isabelle.api.Environment.Context">Context</a></span>, <span name="versionOverride">versionOverride: <a href="http://scala-lang.org/files/archive/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="Version.html" class="extype" name="info.hupel.isabelle.api.Version">Version</a>] = <span class="symbol">None</span></span>, <span name="checkClassLoader">checkClassLoader: <a href="http://scala-lang.org/files/archive/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a> = <span class="symbol">true</span></span>)</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
