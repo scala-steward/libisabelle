@@ -16,11 +16,11 @@ import info.hupel.isabelle._, info.hupel.isabelle.api._, info.hupel.isabelle.set
 // import info.hupel.isabelle.api._
 // import info.hupel.isabelle.setup._
 
-val setup = Setup.default(Version.Stable("2016-1"), false).right.get
-// setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2016-1,Linux,<Isabelle2016-1>)
+val setup = Setup.default(Version.Stable("2017"), false).right.get
+// setup: info.hupel.isabelle.setup.Setup = Setup(/home/travis/.local/share/libisabelle/setups/Isabelle2017,Linux,<Isabelle2017>)
 
 val resources = Resources.dumpIsabelleResources().right.get
-// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources8643277828334754461,List(/tmp/libisabelle_resources8643277828334754461/libisabelle, /tmp/libisabelle_resources8643277828334754461/classy, /tmp/libisabelle_resources8643277828334754461/multi-isabelle))
+// resources: info.hupel.isabelle.setup.Resources = Resources(/tmp/libisabelle_resources7264436863508735724,List(/tmp/libisabelle_resources7264436863508735724/libisabelle, /tmp/libisabelle_resources7264436863508735724/classy, /tmp/libisabelle_resources7264436863508735724/multi-isabelle))
 
 val config = Configuration.simple("Protocol")
 // config: info.hupel.isabelle.api.Configuration = session Protocol
