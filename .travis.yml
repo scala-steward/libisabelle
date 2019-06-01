@@ -10,10 +10,10 @@ deploy:
       condition: $DEPLOY = 1
 matrix:
   include:
-    - env: ISABELLE_VERSION=stable:2017 SCALA_VERSION=2.11.12 PROFILE=quick
+    - env: ISABELLE_VERSION=stable:2018 SCALA_VERSION=2.11.12 PROFILE=quick
       os: osx
       osx_image: xcode8.3
-    - env: ISABELLE_VERSION=stable:2018 SCALA_VERSION=2.11.12 PROFILE=quick
+    - env: ISABELLE_VERSION=stable:2019-RC4 SCALA_VERSION=2.11.12 PROFILE=quick
       os: osx
       osx_image: xcode8.3
     - env: ISABELLE_VERSION=stable:2016-1 SCALA_VERSION=2.11.12 PROFILE=generic
