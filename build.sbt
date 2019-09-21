@@ -156,7 +156,7 @@ lazy val pideInterface = project.in(file("modules/pide-interface"))
     buildInfoPackage := "info.hupel.isabelle.api",
     libraryDependencies ++= Seq(
       "com.chuusai" %% "shapeless" % "2.3.3",
-      "io.monix" %% "monix-execution" % "3.0.0-RC1",
+      "io.monix" %% "monix-execution" % "3.0.0",
       "org.log4s" %% "log4s" % "1.8.2",
       // the dependencies below are not strictly necessary for pide-interface,
       // but all non-generic PIDE implementations require them
